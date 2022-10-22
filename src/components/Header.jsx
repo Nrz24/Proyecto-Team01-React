@@ -21,9 +21,9 @@ export const Header = () => {
             <Textomenu menu='Abaout Us'/>
         </div>
         <div className='contendor-elipse'>
-            <Elipse nombre='lupa'/>
-            <Elipse nombre='usuario' />
-            <Elipse nombre='carrito' />
+            <Elipse nombre='lupa' esHeader={ true } />
+            <Elipse nombre='usuario' esHeader={ true } />
+            <Elipse nombre='carrito' esHeader={ true } />
         </div>
     </div>
   )

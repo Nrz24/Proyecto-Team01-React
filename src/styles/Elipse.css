@@ -20,3 +20,21 @@
 .contenedor-elipse:hover{
     border: 1px solid #3b20e9;
 }
+
+.contenedor-elipse-friends{
+    color: white;
+    display: flex;
+    border: 1px solid #BFBFBF;
+    border-radius: 30px;
+    width: 60px;
+    height: 60px;
+    float: left;
+    margin-right: 25px;
+    text-align: center;
+    justify-content: center;
+    background-color: #FF8126;
+}
+
+.contenedor-elipse-friends:hover{
+    border: 1px solid #3b20e9;
+}
