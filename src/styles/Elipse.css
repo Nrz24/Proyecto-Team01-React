@@ -1,0 +1,15 @@
+.contenedor-elipse{
+    display: flex;
+    border: 1px solid #BFBFBF;
+    border-radius: 30px;
+    width: 60px;
+    height: 60px;
+    float: left;
+    margin-right: 25px;
+}
+
+.imagen{
+    
+    width: 100%;
+}
+
