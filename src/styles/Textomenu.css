@@ -17,3 +17,8 @@ ul li a{
     padding: 20px;
     font-style: normal;
 }
+
+ul li a:hover{
+    font-size: 20px;
+    color:blue;
+}
