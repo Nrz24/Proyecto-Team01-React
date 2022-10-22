@@ -1,0 +1,19 @@
+.contenedor-warning{
+    width: 1280px;
+    height: 50px;
+    background-color: #C2E8CE;
+    font-family: 'Poppins';
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 21px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    
+}
+
+ .titulo{
+    position: absolute;
+    margin-top: 15px;
+    color: #1F1F1F
+}

@@ -1,0 +1,19 @@
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+.contenedor-menu{   
+    display: flex;
+    
+}
+
+.contenedor-elipse{
+    display: flex;
+    
+}
+
+
+
