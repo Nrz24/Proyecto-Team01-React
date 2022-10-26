@@ -1,6 +1,7 @@
 
 import "./App.css";
 import Header from "./components/Header";
+import Slider from "./components/Slider";
 import Tellafriend from "./components/Tellafriend";
 
 
@@ -18,6 +19,9 @@ function App() {
         </div>
         <div>
            <Tellafriend esHeader={ false } />
+        </div>
+        <div>
+          <Slider />
         </div>
       </div>         
       
