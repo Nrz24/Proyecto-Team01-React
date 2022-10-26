@@ -1,6 +1,7 @@
 
 import "./App.css";
 import Header from "./components/Header";
+import Slider from "./components/Slider";
 import Tellafriend from "./components/Tellafriend";
 import Warning from "./components/Warning";
 import LatestOffers from "./components/LatestOffers";
@@ -21,11 +22,14 @@ function App() {
            <Tellafriend esHeader={ false } />
         </div>
         <div>
-        <Banner/>
-        <LatestOffers/>
-        <WhyChoose/>
+            <Banner/>
+            <LatestOffers/>
+            <WhyChoose/>
+        </div>
       </div>
-      </div>         
+        <div>
+          <Slider />
+        </div>       
       
     </>
   );
