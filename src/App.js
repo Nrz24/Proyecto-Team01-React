@@ -19,7 +19,7 @@ function App() {
             <Header />
         </div>
         <div>
-           <Tellafriend esHeader={ false } />
+            <Tellafriend esHeader={ false } />
         </div>
         <div>
             <Banner/>
