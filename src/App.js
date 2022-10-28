@@ -25,11 +25,9 @@ function App() {
             <Banner/>
             <LatestOffers/>
             <WhyChoose/>
+            <Slider />
         </div>
-      </div>
-        <div>
-          <Slider />
-        </div>       
+      </div>         
       
     </>
   );
