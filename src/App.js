@@ -22,15 +22,12 @@ function App() {
             <Banner/>
             <LatestOffers/>
             <WhyChoose/>
+            <Slider />
         </div>
         <div>
            <Tellafriend esHeader={ false } />
         </div>
       </div>
-        <div>
-          <Slider />
-        </div>       
-      
     </>
   );
 }

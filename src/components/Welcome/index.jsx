@@ -6,7 +6,7 @@ function Welcome() {
     <div className={styles.welcomeContainer}>
       <header >
         <p className={styles.welcomeMessage}>
-          ¡Welcome! I will be a title
+          ¡Welcome! 
           <Button texto="Probando Boton" > </Button>
         </p>
       </header>
