@@ -39,10 +39,12 @@ function CardProducto(props) {
   console.log("item:" ,item)
   
     return (
-      <div className={styles.cardWhy}>
-        <img src={item.imagen} alt={item.texto}></img> 
-        <div className={styles.cardTituloWhy}>{item.titulo} </div>
-        <div className={styles.cardTextoWhy}>{item.texto} </div>
+      <div>
+        <div className={styles.cardWhy}>
+          <img src={item.imagen} alt={item.texto}></img> 
+          <div className={styles.cardTituloWhy}>{item.titulo} </div>
+          <div className={styles.cardTextoWhy}>{item.texto} </div>
+        </div>
       </div>
     );
   }

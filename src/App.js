@@ -19,12 +19,12 @@ function App() {
             <Header />
         </div>
         <div>
-           <Tellafriend esHeader={ false } />
-        </div>
-        <div>
             <Banner/>
             <LatestOffers/>
             <WhyChoose/>
+        </div>
+        <div>
+           <Tellafriend esHeader={ false } />
         </div>
       </div>
         <div>
