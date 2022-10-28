@@ -26,3 +26,23 @@
     color: #1F1F1F;
     padding: 3px;
 }
+
+@media only screen and (max-width: 830px) {
+    .cardTituloWhy {
+        font-size: 20px;
+    }
+
+    .cardTextoWhy {
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width: 501px) {
+    .cardTituloWhy {
+        font-size: 18x;
+    }
+
+    .cardTextoWhy {
+        font-size: 12px;
+    }
+}

@@ -8,10 +8,14 @@ import useWindowDimensions from "../WinDimensions/WinDimensions";
  
 
 const Carousel = (props) => {
-    const { height, width } = useWindowDimensions();
-    const show = Math.floor (width * 0.8 / 270); // calculo la cantidad de items a mostrar en base al ancho de la pantalla
-    const {children, infiniteLoop} = props
 
+    let {children, infiniteLoop, cardWidth} = props
+    console.log(children)
+    // calculo la cantidad de items a mostrar en base al ancho de la pantalla
+    let { height, width } = useWindowDimensions();
+    cardWidth = cardWidth || 270; //si no me dicen el ancho en la llamada a Carousel, le pongo 270px
+    const show = Math.floor (width * 0.8 / cardWidth); 
+    
     const [currentIndex, setCurrentIndex] = useState(infiniteLoop ? show : 0)
     const [length, setLength] = useState(children.length)
     

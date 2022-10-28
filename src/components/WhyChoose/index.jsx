@@ -9,7 +9,7 @@ function WhyChoose(props) {
       return (
         <>
         <h2 className={styles.whyTituloNegro}>Why Choose <span className={styles.whyTituloNaranja}>the Premium Bakery Quality</span> </h2>
-        <Carousel infiniteLoop={true} >
+        <Carousel infiniteLoop={true} cardWidth="270" >
           <CardWhy item="discover"/>
           <CardWhy item="buy"/>
           <CardWhy item="support"/>

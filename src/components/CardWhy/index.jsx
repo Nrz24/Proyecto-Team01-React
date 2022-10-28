@@ -36,7 +36,7 @@ function CardProducto(props) {
 
   //console.log("producto:", producto.pizza.imagen, producto.pizza.texto, "props:", props)
   let item=tarjeta[props.item]
-  console.log("item:" ,item)
+ // console.log("item:" ,item)
   
     return (
       <div>

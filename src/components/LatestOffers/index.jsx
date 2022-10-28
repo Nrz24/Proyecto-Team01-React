@@ -10,8 +10,9 @@ function LatestOffers(props) {
     
       return (
         <>
-        <h2 className={styles.tituloNegro}>Latest <span className={styles.tituloNaranja}>Offers</span> </h2>
-          <Carousel  infiniteLoop={true} >     
+        <h2 className={styles.tituloNegro}>Latest <span className={styles.tituloNaranja}>Offers</span>  </h2>
+     
+          <Carousel  infiniteLoop={true} cardWidth="270" >     
                 <CardProducto item="pizza"/>  
                 <CardProducto item="pancakes"/>
                 <CardProducto item="orange"/>

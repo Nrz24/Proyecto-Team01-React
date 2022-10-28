@@ -7,6 +7,7 @@ import Warning from "./components/Warning";
 import LatestOffers from "./components/LatestOffers";
 import Banner from "./components/Banner";
 import WhyChoose from "./components/WhyChoose";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -23,9 +24,8 @@ function App() {
             <LatestOffers/>
             <WhyChoose/>
             <Slider />
-        </div>
-        <div>
            <Tellafriend esHeader={ false } />
+           <Footer></Footer>
         </div>
       </div>
     </>
