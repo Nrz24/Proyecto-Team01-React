@@ -16,24 +16,30 @@
     height: 40%;
 }
 
-.contenedor_elipse:hover {
+<<<<<<< HEAD .contenedor_elipse:hover {
     border: 1px solid #3b20e9;
 }
 
 .contenedor_elipse_friends {
-    color: white;
-    display: flex;
-    border: 1px solid #BFBFBF;
-    border-radius: 30px;
-    width: 60px;
-    height: 60px;
-    float: left;
-    margin-right: 25px;
-    text-align: center;
-    justify-content: center;
-    background-color: #FF8126;
-}
+    =======.contenedor_elipse:hover {
+        border: 1px solid #3b20e9;
+    }
 
-.contenedor_elipse_friends:hover {
-    border: 1px solid #3b20e9;
-}
+    .contenedor_elipse_friends {
+        >>>>>>>aletelier color: white;
+        display: flex;
+        border: 1px solid #BFBFBF;
+        border-radius: 30px;
+        width: 60px;
+        height: 60px;
+        float: left;
+        margin-right: 25px;
+        text-align: center;
+        justify-content: center;
+        background-color: #FF8126;
+    }
+
+    <<<<<<< HEAD .contenedor_elipse_friends:hover {
+        =======.contenedor_elipse_friends:hover {
+            >>>>>>>aletelier border: 1px solid #3b20e9;
+        }
