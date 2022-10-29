@@ -1,0 +1,26 @@
+/*font-family: 'Poppins', sans-serif;*/
+
+/*font-family: 'Cormorant', serif;*/
+.contenedorFooter {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 15px;
+}
+
+.footerTitulo {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.footerUl {
+    display: flex;
+    flex-direction: column;
+}
+
+.footerItem {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+}
