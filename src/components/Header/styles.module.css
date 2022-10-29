@@ -5,15 +5,24 @@
     
 }
 
-.contenedor-menu{   
+.contenedor_menu{   
     display: flex;
     
 }
 
-.contenedor-elipse{
+.contenedor_elipse{
     display: flex;
     
 }
+
+.contenedor_log{
+
+}
+
+.imagen_logo{
+
+}
+
 
 
 

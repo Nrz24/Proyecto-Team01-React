@@ -1,4 +1,4 @@
-.contenedor-elipse {
+.contenedor_elipse {
     display: flex;
     border: 1px solid #BFBFBF;
     border-radius: 30px;
@@ -8,7 +8,6 @@
     margin-right: 25px;
     text-align: center;
     justify-content: center;
-
 }
 
 .imagen {
@@ -17,11 +16,11 @@
     height: 40%;
 }
 
-.contenedor-elipse:hover {
+.contenedor_elipse:hover {
     border: 1px solid #3b20e9;
 }
 
-.contenedor-elipse-friends {
+.contenedor_elipse_friends {
     color: white;
     display: flex;
     border: 1px solid #BFBFBF;
@@ -35,6 +34,6 @@
     background-color: #FF8126;
 }
 
-.contenedor-elipse-friends:hover {
+.contenedor_elipse_friends:hover {
     border: 1px solid #3b20e9;
 }
