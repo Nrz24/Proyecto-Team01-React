@@ -1,6 +1,6 @@
 import "./App.css";
 import Header from "./components/Header";
-import Slider from "./components/Slider";
+//import Slider from "./components/Slider";
 import Tellafriend from "./components/Tellafriends";
 import Warning from "./components/Warning";
 import LatestOffers from "./components/LatestOffers";
@@ -22,7 +22,7 @@ function App() {
             <Banner/>
             <LatestOffers/>
             <WhyChoose/>
-            <Slider />
+            --ACA VA el Slider -- No sé donde quedó (DIBARRA)
            <Tellafriend esHeader={ false } />
            <Footer></Footer>
         </div>
