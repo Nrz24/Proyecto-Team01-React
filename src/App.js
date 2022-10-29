@@ -1,7 +1,7 @@
 import "./App.css";
 import Header from "./components/Header";
 import Slider from "./components/Slider";
-import Tellafriend from "./components/Tellafriend";
+import Tellafriend from "./components/Tellafriends";
 import Warning from "./components/Warning";
 import LatestOffers from "./components/LatestOffers";
 import Banner from "./components/Banner";
