@@ -12,16 +12,16 @@ function WhoMakes() {
         <p className={styles.whoParrafo}>Our mission is to help grow the local food ecosystem in BC and across Canada.  Why? </p>
         <div className={styles.whoLista}>
             <ul>
-                <li>Because it connects us to the land we live on, and to the people who live here.</li><br></br>
-                <li>Because it’s more meaningful to cook and eat something made by a person nearby than by some distant corporation</li><br></br>
-                <li>Because good local food makes our corner of the world a better place to live</li><br></br>
-                <li>Because it supports local jobs</li><br></br>
-                <li>Because it makes more sense for the environment</li><br></br> 
+                <p>Because it connects us to the land we live on, and to the people who live here.</p>
+                <p>Because it’s more meaningful to cook and eat something made by a person nearby than by some distant corporation</p>
+                <p>Because good local food makes our corner of the world a better place to live</p>
+                <p>Because it supports local jobs</p>
+                <p>Because it makes more sense for the environment</p> 
             </ul>
             
         </div>
         <div className={styles.whoButton}>
-        <Button texto="Discover ourproducers"></Button>
+        <Button texto="Discoverourproducers"></Button>
         </div>
         <div className={styles.whoContainerimg}>
             

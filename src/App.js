@@ -7,6 +7,7 @@ import Warning from "./components/Warning";
 import LatestOffers from "./components/LatestOffers";
 import Banner from "./components/Banner";
 import WhyChoose from "./components/WhyChoose";
+import WhoMakes from "./components/WhoMakes";
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
             <Banner/>
             <LatestOffers/>
             <WhyChoose/>
+            <WhoMakes/>
         </div>
       </div>
         <div>

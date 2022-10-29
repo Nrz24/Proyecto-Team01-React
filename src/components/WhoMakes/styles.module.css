@@ -34,14 +34,15 @@
     left: 655px;
     width: 50%;
     padding: 0px 0px 0px 0px;
-    margin: 100px 0px 0px 0px ;
+    margin: 80px 0px 0px 50px ;
     box-sizing: border-box;
 }
 
 .whoLista{
     font-size: 16px;
     display: flex;
-    padding: 0px 25px;
+    flex-direction: row;
+    padding: 0px px;
     width: 45%;
     font-weight: 400;
     
