@@ -8,7 +8,7 @@ const Instagram = () => {
         <div className={ style.title }>
             <h2><span>@PremiumBakeryQuality</span> on Instagram</h2>
         </div>
-        <div className="carusel">
+        <div className={ style.carusel }>
               <Squareinstagram name='slider1' path='Instagram'/>
               <Squareinstagram name='slider2' path='Instagram'/>
               <Squareinstagram name='slider3' path='Instagram'/>
