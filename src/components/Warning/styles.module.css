@@ -1,4 +1,4 @@
-.contenedor-warning{
+.contenedor_warning{
     width: 1280px;
     height: 50px;
     background-color: #C2E8CE;
@@ -12,7 +12,7 @@
     
 }
 
- .titulo{
+ .title{
     position: absolute;
     margin-top: 15px;
     color: #1F1F1F
