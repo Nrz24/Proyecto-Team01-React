@@ -1,6 +1,7 @@
 
 import "./App.css";
 import Header from "./components/Header";
+import Instagram from "./components/Instagram";
 import Tellafriend from "./components/Tellafriends";
 import Warning from "./components/Warning";
 
@@ -19,6 +20,7 @@ function App() {
         <div>
                       
            <Tellafriend />
+           <Instagram />
            
         </div>
         

@@ -1,0 +1,20 @@
+.contenedor_instagram{
+    width: 1170px;
+    height: 276px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.title h2{
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 48.44px;
+
+}
+
+span{
+    color:#FF8126;
+    text-decoration: underline;
+}
