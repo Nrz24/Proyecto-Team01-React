@@ -10,9 +10,18 @@ function App() {
     <>
     
       <div className='App'>
-          <Warning  title='Free Delivery over $100. Gift with Purchase over $150'/>
-          <Header />
-          <Tellafriend />  
+      <div className='warning'>
+            <Warning title='Free Delivery over $100. Gift with Purchase over $150'/>
+        </div>
+        <div className='contenedor-header'>
+            <Header />
+        </div>
+        <div>
+                      
+           <Tellafriend />
+           
+        </div>
+        
       </div>         
       
     </>
