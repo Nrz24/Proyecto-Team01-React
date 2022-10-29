@@ -8,6 +8,9 @@ import Banner from "./components/Banner";
 import WhyChoose from "./components/WhyChoose";
 import Footer from "./components/Footer/Footer";
 
+import WhoMakes from "./components/WhoMakes";
+
+
 function App() {
   return (
     <>
@@ -23,8 +26,17 @@ function App() {
             <LatestOffers/>
             <WhyChoose/>
             --ACA VA el Slider -- No sé donde quedó (DIBARRA)
-           <Tellafriend esHeader={ false } />
-           <Footer></Footer>
+            <Tellafriend esHeader={ false } />
+            <Footer></Footer>
+
+            <Tellafriend esHeader={ false } />
+        </div>
+        <div>
+            <Banner/>
+            <LatestOffers/>
+            <WhyChoose/>
+            <WhoMakes/>
+
         </div>
       </div>
     </>

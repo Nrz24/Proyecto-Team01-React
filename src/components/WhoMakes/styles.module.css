@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+.whoContainer{
+    display: flex;
+    height: 500px;
+    width: 100%;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+}
+.whoTituloNegro {
+    padding: 50px 0px 0px 40px;
+    display: flex;
+    width: 50%;
+    color: #FF8126;
+    font-family: 'Cormorant', serif;
+    font-weight: 700;
+    font-size: 40px;
+    text-align: start;
+}
+.whoTituloNaranja {
+    display: flex;
+    color:  #1F1F1F;
+    padding: 0px 0px 0px 5px;
+}
+.whoContainerimg{
+    background-image: url(./img/fotoMano.png);
+    background-repeat: no-repeat;
+    background-size:90%;
+    height: 855px;
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    left: 655px;
+    width: 50%;
+    padding: 0px 0px 0px 0px;
+    margin: 80px 0px 0px 50px ;
+    box-sizing: border-box;
+}
+
+.whoLista{
+    font-size: 16px;
+    display: flex;
+    flex-direction: row;
+    padding: 0px px;
+    width: 45%;
+    font-weight: 400;
+    
+}
+.whoParrafo{
+    font-size: 16px;
+    font-weight: 500;
+    margin: 0px 0px 20px 40px;
+    width: 45%;
+}
+.whoButton{
+    margin: 0px 0px 0px 50px;
+    width: 250px;
+    background-color: #FF8126;
+    border-radius: 5px;
+    border-style: none;
+    height: 45px;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 27px;
+    
+}
