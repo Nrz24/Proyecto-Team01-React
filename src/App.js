@@ -11,14 +11,22 @@ import Footer from "./components/Footer/Footer";
 function App() {
   return (
     <>
-        <Warning  title='Free Delivery over $100. Gift with Purchase over $150'/>
-        <Header />
-        <Banner />
-        <Tellafriend />     
-        <LatestOffers />
-        <WhyChoose />
-        <Instagram />
-        <Footer />  
+        <div className='App'>
+        <div className='warning'>
+            <Warning title='Free Delivery over $100. Gift with Purchase over $150'/>
+        </div>
+        <div className='contenedor-header'>
+            <Header />
+        </div>
+        <div>
+            <Banner />
+            <LatestOffers />
+            <WhyChoose />
+            <Instagram />            
+            <Tellafriend  />           
+            <Footer />
+        </div>
+      </div>
       
     </>
   );
