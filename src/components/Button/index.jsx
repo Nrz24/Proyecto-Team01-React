@@ -2,7 +2,7 @@ import styles from "./styles.module.css"
 function Button(props) {
     return (
       <div >
-      <button>{props.texto}</button>
+      <button className={styles.botonNaranja}>{props.texto}</button>
       </div>
     );
   }

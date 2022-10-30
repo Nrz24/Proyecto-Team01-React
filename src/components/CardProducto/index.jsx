@@ -35,18 +35,36 @@ function CardProducto(props) {
       precio: "$27.99",
       textoBoton: "Quick Shop"
     },
+    beer:{
+      id: 5,
+      imagen: require("./images/beer.png"),
+      texto: "Beer",
+      precioDcto: "$4.99",
+      precio: "$6.99",
+      textoBoton: "Quick Shop"
+    },
+    burger:{
+      id: 4,
+      imagen: require("./images/burger.png"),
+      texto: "Hamburger",
+      precioDcto: "$16.99",
+      precio: "$17.99",
+      textoBoton: "Quick Shop"
+    },
 }
 
-  console.log("producto:", producto.pizza.imagen, producto.pizza.texto, "props:", props)
+
   let item=producto[props.item]
-  console.log("item:" ,item)
+ 
   
     return (
-      <div className={styles.cardProd}>
-        <img src={item.imagen} alt={item.texto}></img> 
-        <div className={styles.cardTexto}>{item.texto} </div>
-        <div className={styles.cardPrecioDcto}> {item.precioDcto} <span className={styles.cardPrecio}>{item.precio}</span></div>
-        <Button texto={item.textoBoton}></Button>
+      <div>
+        <div className={styles.cardProd}>
+          <img src={item.imagen} alt={item.texto}></img> 
+          <div className={styles.cardTexto}>{item.texto} </div>
+          <div className={styles.cardPrecioDcto}> {item.precioDcto} <span className={styles.cardPrecio}>{item.precio}</span></div>
+          <Button texto={item.textoBoton}></Button>
+        </div>
       </div>
     );
   }

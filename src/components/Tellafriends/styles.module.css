@@ -1,0 +1,27 @@
+.fondo{
+    font-family: 'Poppins';
+    width: 100%;
+    height: 260px;
+    background-image: url('./images/fondo2.PNG');
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;    
+    margin-top: 100px;
+}
+
+.titulo_friends{
+    font-size: 40px;
+    font-family: Arial,Helvetica, sans-serif;
+    font-weight: 700;
+    line-height: 48.44px;       
+}
+
+.elipses_friends{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+    
+}
+

@@ -1,22 +1,33 @@
 @import url('https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
 
 /*font-family: 'Cormorant', serif;*/
-.whyTira {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-evenly;
-    text-align: center;
-}
 
+h2 {
+    padding: 60px;
+}
 .whyTituloNegro {
     color: #1F1F1F;
     font-family: 'Cormorant', serif;
     font-weight: 700;
     font-size: 40px;
     text-align: center;
+    width: 90%;
 }
 
 .whyTituloNaranja {
     color: #FF8126;
+}
+
+@media only screen and (max-width: 830px) {
+    .whyTituloNegro {
+        text-align: left;
+        padding-left: 5%;
+        font-size: 38px;
+    }
+}
+
+@media only screen and (max-width: 501px) {
+    .whyTituloNegro {
+        font-size: 22px;
+    }
 }

@@ -1,5 +1,5 @@
-import React from 'react'
-import '../styles/Textomenu.css'
+import React from 'react';
+import './styles.module.css';
 
 export const Textomenu = (props) => {
   return (
