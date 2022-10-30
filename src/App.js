@@ -9,6 +9,7 @@ import Banner from "./components/Banner";
 import WhyChoose from "./components/WhyChoose";
 import WhoMakes from "./components/WhoMakes";
 
+
 function App() {
   return (
     <>
@@ -27,6 +28,13 @@ function App() {
             <LatestOffers/>
             <WhyChoose/>
             <WhoMakes/>
+            
+            
+            <Tellafriend esHeader={ false } />
+            
+
+            
+
         </div>
       </div>
         <div>
