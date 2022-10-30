@@ -11,7 +11,7 @@ function Menu (props){
  //   console.log(Menues[titulo])
 
     return (
-        <div>
+        <div className={styles.footerContenedorMenu}>
             <h1 className={styles.footerTitulo}> {titulo}</h1>
             <ul className={styles.footerUl}>{
                 lista.map ( linea => {
@@ -31,11 +31,11 @@ function Footer (props) {
 
     return (
       <div className={styles.contenedorFooter}>
-        <Menu lista="Ocassions" />
-        <Menu lista="All Categories"/>
-        <Menu lista="Gifts & Bundles"/>
-        <Menu lista="Our Brands"/>
-        <Menu lista="About Us"/>
+        <div><Menu lista="Ocassions" /></div>
+        <div><Menu lista="All Categories"/></div>
+        <div><Menu lista="Gifts & Bundles"/></div>
+        <div><Menu lista="Our Brands"/></div>
+        <div><Menu lista="About Us"/></div>
       </div>
     );
   }

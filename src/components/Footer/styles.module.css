@@ -4,8 +4,16 @@
 .contenedorFooter {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-around;
     margin-top: 15px;
+    background-color: DodgerBlue;
+    width: 100%;
+}
+
+.footerContenedorMenu {
+    border: solid blueviolet 2px;
+    width: 180px;
 }
 
 .footerTitulo {
