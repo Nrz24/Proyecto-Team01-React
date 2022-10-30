@@ -6,9 +6,9 @@
 /*font-family: 'Cormorant', serif;*/
 
 .backgorund{
-    background-image: url(./img/Bakery.jpg);
-    background-repeat: no-repeat;
-    height: 30px;
+    background-image: url('./img/Bakery.jpg');
+    /* background-repeat: no-repeat; */
+    height: 300px;
     width: auto;
     display: flex;
     justify-content: center;
