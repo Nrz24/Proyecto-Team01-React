@@ -1,4 +1,4 @@
-.whoList{
+.whoLista{
     font-size: 16px;
     display: flex;
     flex-direction: column;
@@ -6,4 +6,10 @@
     width: 45%;
     font-weight: 400;
     
+}
+.WhoMakesList{
+    font-size: 16px;
+    width: 50%;
+    height: 500px;
+    background-color: aquamarine;
 }
