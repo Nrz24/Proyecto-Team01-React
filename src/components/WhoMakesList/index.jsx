@@ -1,7 +1,7 @@
 import styles from "./styles.module.css"
 
 
-function WhoMakesLista(props) {
+function WhoMakesList(props) {
     const lista={
         connects:{
             id: 1,
@@ -9,25 +9,25 @@ function WhoMakesLista(props) {
             titulo: "Connect us",
             texto: "Because it connects us to the land we live on, and to the people who live here.",
         },
-        connects:{
+        cook:{
             id: 2,
             imagen: require("./images/punto.png"),
             titulo: "Cook and eat",
             texto: "Because it’s more meaningful to cook and eat something made by a person nearby than by some distant corporation.",
         },
-        connects:{
+        food:{
             id: 3,
             imagen: require("./images/punto.png"),
             titulo: "Local food",
             texto: "Because good local food makes our corner of the world a better place to live",
         },
-        connects:{
+        jobs:{
             id: 4,
             imagen: require("./images/punto.png"),
             titulo: "local jobs",
             texto: "Because it supports local jobs",
         },
-        connects:{
+        environment:{
             id: 5,
             imagen: require("./images/punto.png"),
             titulo: "environment",
@@ -39,12 +39,14 @@ let item=lista[props.item]
 
 
     return (
-    <div className={styles.whoLista}>
-        <img src={item.imagen} alt={item.texto}></img>
-        <div className={styles.WhoMakesList}>{item.texto} </div>
-    </div>
+        <>
+        <div className={styles.whoLista}>
+            <img src={item.imagen} alt={item.texto}></img>
+            <div className={styles.WhoMakesList}>{item.texto} </div>
+        </div>
+        </>
     )
 }
 
 
-export default WhoMakesLista;
+export default WhoMakesList;
