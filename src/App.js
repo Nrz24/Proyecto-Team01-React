@@ -8,7 +8,7 @@ import Banner from "./components/Banner";
 import WhyChoose from "./components/WhyChoose";
 import Footer from "./components/Footer/Footer";
 import WhoMakes from "./components/WhoMakes";
-import WhoMakesList from "./components/WhoMakesList";
+
 
 
 
@@ -28,7 +28,7 @@ function App() {
             <LatestOffers/>
             <WhyChoose/>
             <WhoMakes/>
-            <WhoMakesList/>
+            
             <Tellafriend esHeader={ false } />
             <Footer></Footer>
 

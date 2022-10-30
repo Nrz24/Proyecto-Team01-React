@@ -1,7 +1,7 @@
 import styles from "./styles.module.css"
 
 
-function WhoMakesList(props) {
+function WhoMakesLista(props) {
     const lista={
         connects:{
             id: 1,
@@ -33,9 +33,9 @@ function WhoMakesList(props) {
             titulo: "environment",
             texto: "Because it makes more sense for the environment",
         },
-    }
+}
 
-    let item=lista[props.item]
+let item=lista[props.item]
 
 
     return (
@@ -47,4 +47,4 @@ function WhoMakesList(props) {
 }
 
 
-export default WhoMakesList;
+export default WhoMakesLista;
