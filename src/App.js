@@ -7,9 +7,7 @@ import LatestOffers from "./components/LatestOffers";
 import Banner from "./components/Banner";
 import WhyChoose from "./components/WhyChoose";
 import Footer from "./components/Footer/Footer";
-import WhoMakes from "./components/WhoMakes";
-import OurPartner from "./components/OurPartner";
-import Footer from "./components/Footer/Footer";
+
 
 
 function App() {
@@ -31,27 +29,15 @@ function App() {
             <Banner/>
             <LatestOffers/>
             <WhyChoose/>
-            <WhoMakes/>
-
-            <OurPartner/>
-            
-            <Tellafriend esHeader={ false } />
-            <Footer></Footer>
-
-            <Tellafriend esHeader={ false } />
-
-            
             
             <Tellafriend esHeader={ false } />
             
-
-            
-
-
+            <Tellafriend esHeader={ false } />
+            <Tellafriend esHeader={ false } />
             <Banner />
             <LatestOffers />
             <WhyChoose />
-            <OurPartner/>
+            
             <Instagram />            
             <Tellafriend  />           
             <Footer />

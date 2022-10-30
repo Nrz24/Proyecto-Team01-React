@@ -1,5 +1,5 @@
 import styles from "./styles.module.css"
-import WhoMakesList from "../WhoMakesList"
+
 
 function WhoMakes() {
 
