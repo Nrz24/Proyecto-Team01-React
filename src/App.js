@@ -7,8 +7,10 @@ import LatestOffers from "./components/LatestOffers";
 import Banner from "./components/Banner";
 import WhyChoose from "./components/WhyChoose";
 import Footer from "./components/Footer/Footer";
-
 import WhoMakes from "./components/WhoMakes";
+import WhoMakesList from "./components/WhoMakesList";
+
+
 
 
 function App() {
@@ -25,18 +27,12 @@ function App() {
             <Banner/>
             <LatestOffers/>
             <WhyChoose/>
-            --ACA VA el Slider -- No sé donde quedó (DIBARRA)
+            <WhoMakes/>
+            <WhoMakesList/>
             <Tellafriend esHeader={ false } />
             <Footer></Footer>
 
             <Tellafriend esHeader={ false } />
-        </div>
-        <div>
-            <Banner/>
-            <LatestOffers/>
-            <WhyChoose/>
-            <WhoMakes/>
-
         </div>
       </div>
     </>

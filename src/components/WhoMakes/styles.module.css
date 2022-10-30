@@ -5,7 +5,7 @@
     height: 500px;
     width: 100%;
     flex-direction: column;
-    margin: 0;
+    margin: 0px 15px 170px 20px;
     padding: 0;
 }
 .whoTituloNegro {
@@ -38,15 +38,7 @@
     box-sizing: border-box;
 }
 
-.whoLista{
-    font-size: 16px;
-    display: flex;
-    flex-direction: row;
-    padding: 0px px;
-    width: 45%;
-    font-weight: 400;
-    
-}
+
 .whoParrafo{
     font-size: 16px;
     font-weight: 500;
