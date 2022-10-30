@@ -38,3 +38,18 @@
 .contenedor_elipse_friends:hover {
     border: 1px solid #3b20e9;
 }
+
+
+@media only screen and (max-width: 412px ){
+    .contenedor_elipse_friends {
+        width: 40px;
+        height: 40px;
+    }
+
+    .imagen {
+        margin-top: 8px;
+        width: 50%;
+        height: 50%;
+    }
+ 
+ }
