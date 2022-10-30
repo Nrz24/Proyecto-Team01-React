@@ -8,6 +8,8 @@ import Banner from "./components/Banner";
 import WhyChoose from "./components/WhyChoose";
 import Footer from "./components/Footer/Footer";
 import WhoMakes from "./components/WhoMakes";
+import OurPartner from "./components/OurPartner";
+
 
 
 
@@ -28,6 +30,7 @@ function App() {
             <LatestOffers/>
             <WhyChoose/>
             <WhoMakes/>
+            <OurPartner/>
             
             <Tellafriend esHeader={ false } />
             <Footer></Footer>

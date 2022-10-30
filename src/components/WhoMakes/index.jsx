@@ -1,5 +1,6 @@
 import styles from "./styles.module.css"
-import WhoMakesList from "../WhoMakesList";
+import WhoMakesList from "../WhoMakesList"
+
 function WhoMakes() {
 
     
@@ -11,7 +12,7 @@ function WhoMakes() {
         <div className={styles.whoContainerimg}>
         </div>
         <div>
-        <WhoMakesList/>
+        
         </div>
         
         </div>

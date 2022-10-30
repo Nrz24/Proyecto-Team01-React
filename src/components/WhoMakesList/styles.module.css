@@ -8,6 +8,7 @@
     
 }
 .WhoMakesList{
+    display: flex;
     font-size: 16px;
     width: 50%;
     height: 500px;
