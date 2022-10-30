@@ -12,7 +12,7 @@ const Carousel = (props) => {
     let {children, infiniteLoop, cardWidth} = props
     // calculo la cantidad de items a mostrar en base al ancho de la pantalla
     let { height, width } = useWindowDimensions();
-    cardWidth = cardWidth || 270; //si no me dicen el ancho en la llamada a Carousel, le pongo 270px
+    cardWidth = cardWidth || 270 //si no me dicen el ancho en la llamada a Carousel, le pongo 270px
     const show = Math.floor (width * 0.8 / cardWidth); 
     
     const [currentIndex, setCurrentIndex] = useState(infiniteLoop ? show : 0)

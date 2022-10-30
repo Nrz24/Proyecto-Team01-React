@@ -2,7 +2,9 @@
 
 /*font-family: 'Cormorant', serif;*/
 
-
+h2 {
+    padding: 60px;
+}
 .whyTituloNegro {
     color: #1F1F1F;
     font-family: 'Cormorant', serif;
