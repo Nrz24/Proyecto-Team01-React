@@ -24,6 +24,7 @@ const Header = () => {
         <Elipse name='lupa' isHeader={ true } path='Header'/>
         <Elipse name='usuario' isHeader={ true } path='Header' />
         <Elipse name='carrito' isHeader={ true } path='Header'/>
+        <div className={ style.total }>23</div>
       </div>
     </div>
   )
