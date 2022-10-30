@@ -1,3 +1,4 @@
+import Carousel from "../Carousel/Carousel"
 import Squareinstagram from '../Squareinstagram';
 import style from './styles.module.css';
 
@@ -8,13 +9,20 @@ const Instagram = () => {
         <div className={ style.title }>
             <h2><span>@PremiumBakeryQuality</span> on Instagram</h2>
         </div>
-        <div className={ style.carusel }>
+        {/* <div className={ style.carusel }>
               <Squareinstagram name='slider1' path='Instagram'/>
               <Squareinstagram name='slider2' path='Instagram'/>
               <Squareinstagram name='slider3' path='Instagram'/>
               <Squareinstagram name='slider4' path='Instagram'/>
               <Squareinstagram name='slider5' path='Instagram'/>
-        </div>
+        </div> */}
+         <Carousel infiniteLoop={true} cardWidth="270" >
+            <Squareinstagram name='slider1' path='Instagram'/>
+            <Squareinstagram name='slider2' path='Instagram'/>
+            <Squareinstagram name='slider3' path='Instagram'/>
+            <Squareinstagram name='slider4' path='Instagram'/>
+            <Squareinstagram name='slider5' path='Instagram'/>
+         </Carousel>
       </div>
   
     
