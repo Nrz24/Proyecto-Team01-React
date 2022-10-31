@@ -2,6 +2,7 @@ import React from 'react'
 import style from './styles.module.css'
 import { Elipse } from '../Elipse';
 
+
 export const Tellafriend = () => {
   return (
     <div className={ style.fondo }>
@@ -16,7 +17,7 @@ export const Tellafriend = () => {
           <Elipse name='whatsapp' isHeader={ false } path='Tellafriends'/>
           <Elipse name='youtube' isHeader={ false } path='Tellafriends'/>
           <Elipse name='telegrama' isHeader={ false } path='Tellafriends'/>
-         
+          <i className="fa-solid fa-check"></i>
         </div>  
           
     </div>
