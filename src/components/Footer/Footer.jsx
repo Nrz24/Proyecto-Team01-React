@@ -1,41 +1,55 @@
 /**/
 import Menues from "./menues.json"
+
+import Collapsible from 'react-collapsible';
+import useWindowDimensions from "../WinDimensions/WinDimensions";
 import styles from "./styles.module.css"
 
 
 function Menu (props){
     let titulo =props.lista
     let lista = Menues[titulo]
-
- //   console.log("Titulo: " , titulo)
- //   console.log(Menues[titulo])
+    let { height, width } = useWindowDimensions();
+    let isWideWindow = useWindowDimensions().width > 520;
+    let roleCursor = isWideWindow ? "default": "pointer" ;
+     //   console.log("Titulo: " , titulo)
+    let anchorStyle = {color: "grey", textAlign: "left", padding:7}
+    
 
     return (
+        
+        
         <div className={styles.footerContenedorMenu}>
-            <h1 className={styles.footerTitulo}> {titulo}</h1>
+            <Collapsible triggerStyle = {{textDecoration: "none", color: "black", cursor:roleCursor}} tabIndex={0} trigger={[titulo]} open={isWideWindow} triggerDisabled={isWideWindow} > 
             <ul className={styles.footerUl}>{
                 lista.map ( linea => {
                     return(
-                        <li key={linea.id} className={styles.footerItem}>{linea.item}</li>
+                        <li key={linea.id} className={styles.footerItem} >
+                          <a className={styles.footerAnchor}href={linea.url} style={anchorStyle}>{linea.item}</a>  
+                        </li>
                     )
-
                 })
             }
             </ul>
+            </Collapsible>
         </div>
         
     )
+
+
+
+
 }
 
 function Footer (props) {
 
     return (
       <div className={styles.contenedorFooter}>
-        <div><Menu lista="Ocassions" /></div>
-        <div><Menu lista="All Categories"/></div>
-        <div><Menu lista="Gifts & Bundles"/></div>
-        <div><Menu lista="Our Brands"/></div>
-        <div><Menu lista="About Us"/></div>
+        <Menu lista="Ocassions" />
+        <Menu lista="All Categories"/>
+        <Menu lista="Gifts & Bundles"/>
+        <Menu lista="Our Brands"/>
+        <Menu lista="About Us"/>
       </div>
     );
   }
