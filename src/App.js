@@ -6,8 +6,11 @@ import Warning from "./components/Warning";
 import LatestOffers from "./components/LatestOffers";
 import Banner from "./components/Banner";
 import WhyChoose from "./components/WhyChoose";
-import OurPartner from "./components/OurPartner";
 import Footer from "./components/Footer/Footer";
+import WhoMakes from "./components/WhoMakes";
+import OurPartner from "./components/OurPartner";
+
+
 
 function App() {
   return (
@@ -20,13 +23,20 @@ function App() {
             <Header />
         </div>
         <div>
-            <Banner />
-            <LatestOffers />
-            <WhyChoose />
+
+            <Tellafriend esHeader={ false } />
+        </div>
+        <div>
+
+            <Banner/>
+            <LatestOffers/>
+            <WhyChoose/>
+            <WhoMakes/>
             <OurPartner/>
             <Instagram />            
             <Tellafriend  />           
             <Footer />
+
         </div>
       </div>
       

@@ -3,7 +3,7 @@ import Button from '../Button';
 import styles from "./styles.module.css"
 function CardProducto(props) {
   const producto={
-     pizza:{
+      pizza:{
       id: 1,
       imagen: require("./images/pizza.png"),
       texto: "Pepperoni Pizza",
