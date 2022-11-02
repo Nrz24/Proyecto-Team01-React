@@ -6,7 +6,6 @@ import Warning from "./components/Warning";
 import LatestOffers from "./components/LatestOffers";
 import Banner from "./components/Banner";
 import WhyChoose from "./components/WhyChoose";
-import OurPartner from "./components/OurPartner";
 import Footer from "./components/Footer/Footer";
 
 function App() {
