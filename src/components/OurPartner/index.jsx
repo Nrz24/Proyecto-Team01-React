@@ -4,6 +4,7 @@ import styles from "./styles.module.css"
 
 const OurPartner = () => {
     return (
+
         
         <div>
             <div className={styles.OurContainer}>
@@ -13,7 +14,7 @@ const OurPartner = () => {
                 </div>
             
             </div>
-        </div>
+
     );
 }
 

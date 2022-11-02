@@ -5,6 +5,7 @@
 h2 {
     padding: 60px;
 }
+
 .whyTituloNegro {
     color: #1F1F1F;
     font-family: 'Cormorant', serif;
@@ -18,7 +19,7 @@ h2 {
     color: #FF8126;
 }
 
-@media only screen and (max-width: 830px) {
+@media only screen and (max-width: 820px) {
     .whyTituloNegro {
         text-align: left;
         padding-left: 5%;
@@ -26,7 +27,7 @@ h2 {
     }
 }
 
-@media only screen and (max-width: 501px) {
+@media only screen and (max-width: 412px) {
     .whyTituloNegro {
         font-size: 22px;
     }
