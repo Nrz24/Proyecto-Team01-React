@@ -6,8 +6,8 @@ function OurPartner (props) {
     return (
       <div className={styles.backgorund}>
         <div className={styles.backgorundText}>
-            <h1> Our Charity Partner, City Bakery</h1>
-            <Button texto="Learn more about City Bakery"></Button>
+            <h1>Surprise Someone<br>Working from Home</br></h1>
+            <Button texto="Buy Now"></Button>
         </div>
       </div>
     );
