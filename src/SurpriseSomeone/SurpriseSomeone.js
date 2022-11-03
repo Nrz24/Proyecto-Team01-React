@@ -1,6 +1,7 @@
+import styles from "./SurpriseSomeone.css"
 
 
-const SurpriseSomeone = () => {
+const SurpriseSomeone = (props) => {
     
     return(
         <div>
