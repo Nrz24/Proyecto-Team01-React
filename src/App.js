@@ -22,9 +22,9 @@ function App() {
         <div>
             <Banner />
             <LatestOffers />
-            <WhyChoose />
-            <OurPartner/>
-            <Instagram />            
+            <WhyChoose />   
+            <SurpriseSomeone/>         
+            <Instagram />         
             <Tellafriend  />           
             <Footer />
         </div>
