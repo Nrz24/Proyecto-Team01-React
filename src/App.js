@@ -21,10 +21,11 @@ function App() {
         <div>
             <Banner />
             <LatestOffers />
-            <WhyChoose />            
-            <Instagram />         
+            <WhyChoose />
+            <Instagram />            
             <Tellafriend  />           
             <Footer />
+
         </div>
       </div>
       
