@@ -32,6 +32,7 @@ function App() {
             <Tellafriend  />
             <SurpriseSomeone />         
             <Footer />
+
         </div>
       </div>
       

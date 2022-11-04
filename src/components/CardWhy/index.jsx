@@ -8,7 +8,7 @@ function CardProducto(props) {
       titulo: "Discover new flavours & people",
       texto: "Discover new tastes, flavours, snacks and recipes to make wonderful meals. Also find out where your food comes from and who makes it.",
     },
-     buy:{
+      buy:{
       id: 1,
       imagen: require("./images/wholesale.png"),
       titulo: "Buy wholesale",

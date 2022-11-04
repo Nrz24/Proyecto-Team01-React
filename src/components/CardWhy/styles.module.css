@@ -27,7 +27,7 @@
     padding: 3px;
 }
 
-@media only screen and (max-width: 830px) {
+@media only screen and (max-width: 820px) {
     .cardTituloWhy {
         font-size: 20px;
     }
@@ -37,7 +37,7 @@
     }
 }
 
-@media only screen and (max-width: 501px) {
+@media only screen and (max-width: 412px) {
     .cardTituloWhy {
         font-size: 18x;
     }
