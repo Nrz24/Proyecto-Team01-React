@@ -6,10 +6,6 @@ import Warning from "./components/Warning";
 import LatestOffers from "./components/LatestOffers";
 import Banner from "./components/Banner";
 import WhyChoose from "./components/WhyChoose";
-<<<<<<< Updated upstream
-=======
-import SurpriseSomeone from "./components/SurpriseSomeone/SurpriseSomeone"
->>>>>>> Stashed changes
 import Footer from "./components/Footer/Footer";
 import SurpriseSomeone from "./components/SurpriseSomeone/SurpriseSomeone";
 
@@ -27,11 +23,11 @@ function App() {
             <Banner />
             <LatestOffers />
             <WhyChoose />
-            <Instagram />
-                   
-            <Tellafriend  />
-            <SurpriseSomeone />         
+            <SurpriseSomeone /> 
+            <Instagram />                   
+            <Tellafriend  />                   
             <Footer />
+             
 
         </div>
       </div>
