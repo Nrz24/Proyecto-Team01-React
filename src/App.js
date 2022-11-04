@@ -7,6 +7,7 @@ import LatestOffers from "./components/LatestOffers";
 import Banner from "./components/Banner";
 import WhyChoose from "./components/WhyChoose";
 import Footer from "./components/Footer/Footer";
+import SurpriseSomeone from "./components/SurpriseSomeone/SurpriseSomeone";
 
 function App() {
   return (
@@ -22,8 +23,10 @@ function App() {
             <Banner />
             <LatestOffers />
             <WhyChoose />
-            <Instagram />            
-            <Tellafriend  />           
+            <Instagram />
+                   
+            <Tellafriend  />
+            <SurpriseSomeone />         
             <Footer />
         </div>
       </div>
