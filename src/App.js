@@ -22,10 +22,7 @@ function App() {
         <div className='contenedor-header'>
             <Header />
         </div>
-        <div>
-
-            <Tellafriend esHeader={ false } />
-        </div>
+        
         <div>
 
             <Banner/>
