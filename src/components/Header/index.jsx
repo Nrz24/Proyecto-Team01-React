@@ -4,7 +4,14 @@ import Textomenu from '../Textomenu';
 import style from './styles.module.css'
 
 
-const Header = () => {
+const Header = (props) => {
+  const {cartItems} = props;
+
+  let cantidadItems = cartItems.reduce(
+    (previousValue, item) => previousValue + item.qty,
+    0
+  );
+  console.log("Cantidad: ", cantidadItems)
   return (
     <div className={style.navbar}>
       <div className={style.contenedor_logo}>
@@ -24,7 +31,7 @@ const Header = () => {
         <Elipse name='lupa' isHeader={ true } path='Header'/>
         <Elipse name='usuario' isHeader={ true } path='Header' />
         <Elipse name='carrito' isHeader={ true } path='Header'/>
-        <div className={ style.total }>23</div>
+        <div className={ style.total }>{cantidadItems}</div>
       </div>
     </div>
   )

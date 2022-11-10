@@ -6,6 +6,7 @@ import Carousel from "../Carousel/Carousel"
 
 
 function LatestOffers(props) {
+  const{cartItems, onAdd} = props;
 
     
       return (
@@ -13,12 +14,12 @@ function LatestOffers(props) {
         <h2 className={styles.tituloNegro}>Latest <span className={styles.tituloNaranja}>Offers</span>  </h2>
      
           <Carousel  infiniteLoop={true} cardWidth="270" >     
-                <CardProducto item="pizza"/>  
-                <CardProducto item="pancakes"/>
-                <CardProducto item="orange"/>
-                <CardProducto item="avocado"/>
-                <CardProducto item="beer"/>
-                <CardProducto item="burger"/>    
+                <CardProducto item="pizza" onAdd={onAdd}/>  
+                <CardProducto item="pancakes" onAdd={onAdd}/>
+                <CardProducto item="orange" onAdd={onAdd}/>
+                <CardProducto item="avocado" onAdd={onAdd}/>
+                <CardProducto item="beer" onAdd={onAdd}/>
+                <CardProducto item="burger" onAdd={onAdd}/>    
           </Carousel>
       </>
 
