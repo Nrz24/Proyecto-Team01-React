@@ -1,17 +1,19 @@
 import React from 'react'
 import { Elipse } from '../Elipse';
 import Textomenu from '../Textomenu';
-import style from './styles.module.css'
+import style from './styles.module.css';
+import ShopCartModal from "../ShopCartModal/ShopCartModal"
 
 
 const Header = (props) => {
-  const {cartItems} = props;
+  const {cartItems, onOpenModal, isOpenModal} = props;
+
 
   let cantidadItems = cartItems.reduce(
     (previousValue, item) => previousValue + item.qty,
     0
   );
-  console.log("Cantidad: ", cantidadItems)
+  
   return (
     <div className={style.navbar}>
       <div className={style.contenedor_logo}>
@@ -31,7 +33,11 @@ const Header = (props) => {
         <Elipse name='lupa' isHeader={ true } path='Header'/>
         <Elipse name='usuario' isHeader={ true } path='Header' />
         <Elipse name='carrito' isHeader={ true } path='Header'/>
-        <div className={ style.total }>{cantidadItems}</div>
+        <button className={ style.total } onClick={()=>onOpenModal(isOpenModal)} >{cantidadItems}</button>
+      </div>
+      <div >
+        {isOpenModal && <ShopCartModal  
+                            cartItems={cartItems} onOpenModal={onOpenModal} isOpenModal={isOpenModal}/>}
       </div>
     </div>
   )
