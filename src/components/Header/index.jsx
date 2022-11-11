@@ -13,6 +13,10 @@ const Header = (props) => {
     (previousValue, item) => previousValue + item.qty,
     0
   );
+
+  let valorTotal = cartItems.reduce(
+    (previousValue, valor) => previousValue + ( Number(valor.qty)*Number(valor.precio)),0
+  )
   console.log("Cantidad: ", cantidadItems)
   return (
     <>
@@ -33,23 +37,42 @@ const Header = (props) => {
       <div className={style.contenedor_elipse}>        
         <Elipse name='lupa' isHeader={ true } path='Header'/>
         <Elipse name='usuario' isHeader={ true } path='Header' />
-        <Elipse name='carrito' isHeader={ true } path='Header'/>
-        <div onClick={()=>cambiarEstadoModal(!estadoModal)} className={ style.total }>{cantidadItems}</div>
+        <div onClick={()=>cambiarEstadoModal(!estadoModal)}>
+            <Elipse name='carrito' isHeader={ true } path='Header'/>
+        </div>
+        
+        <div  className={ style.total }>{cantidadItems}</div>
       </div>      
     </div>
     <Modal estado={estadoModal} cambiarEstado={cambiarEstadoModal}>
+      
       {cartItems.length > 0 ?
         <div>
+          <table>
+            <thead>
+              <th>PRODUCTO</th>
+              <th>PRECIO</th>
+              <th>CANTIDAD</th>
+              <th>TOTAL</th>
+            </thead>
+          
             {cartItems.map((data) => {
                 return (
-                  <li>{data.nombre} : {data.qty}</li>
-                 
+                  <tbody>
+                      <td key={data.id} >{data.nombre}</td>
+                      <td>{data.precio}</td>
+                      <td>{data.qty}</td>
+                      <td>{Number(data.qty )* Number(data.precio)}</td>                    
+                  </tbody>
+                  
                 )
                 
             })}
-            <p>Total :{cantidadItems}</p>
+            <p>Total :{valorTotal.toFixed(2)}</p>
+            </table>
+            
         </div>
-        : <h2>no hay compras realizadas</h2>
+        : <h2>No hay compras realizadas</h2>
       }
     </Modal>
     </>

@@ -27,16 +27,20 @@
     margin-left: -50px;
     font-size: 10px;
 }
-.contenedor_logo{
 
+thead{
+    background: #81bbea;
+}
+th{
+    color:#ffff;
 }
 
-.imagen_logo{
-
+th,td{
+    padding: 10px;
 }
 
-.contenido{
-    color: red;
+p{
+   padding: 20px;
 }
 
 
