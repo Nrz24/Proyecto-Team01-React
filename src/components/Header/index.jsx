@@ -1,11 +1,13 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Elipse } from '../Elipse';
 import Textomenu from '../Textomenu';
 import style from './styles.module.css'
-
+import Modal from '../modal';
 
 const Header = (props) => {
   const {cartItems} = props;
+
+  const [estadoModal, cambiarEstadoModal] = useState(false);
 
   let cantidadItems = cartItems.reduce(
     (previousValue, item) => previousValue + item.qty,
@@ -13,6 +15,7 @@ const Header = (props) => {
   );
   console.log("Cantidad: ", cantidadItems)
   return (
+    <>
     <div className={style.navbar}>
       <div className={style.contenedor_logo}>
         <img
@@ -31,9 +34,21 @@ const Header = (props) => {
         <Elipse name='lupa' isHeader={ true } path='Header'/>
         <Elipse name='usuario' isHeader={ true } path='Header' />
         <Elipse name='carrito' isHeader={ true } path='Header'/>
-        <div className={ style.total }>{cantidadItems}</div>
-      </div>
+        <div onClick={()=>cambiarEstadoModal(!estadoModal)} className={ style.total }>{cantidadItems}</div>
+      </div>      
     </div>
+    <Modal estado={estadoModal} cambiarEstado={cambiarEstadoModal}>
+      {cartItems.length > 0 ?
+        <div>
+            <h1>Ventana modal</h1>
+            <p>Pproducto :{cartItems[0].texto}</p>
+            <p>Cantidad :{cantidadItems}</p>
+        </div>
+        : <h2>no hya compras realizadas</h2>
+      }
+    </Modal>
+    </>
+    
   )
 }
 
