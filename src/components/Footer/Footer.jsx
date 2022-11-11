@@ -1,5 +1,5 @@
 /**/
-import Menues from "./menues.json"
+import Menues from "../../data/menues.json"
 
 import Collapsible from 'react-collapsible';
 import useWindowDimensions from "../WinDimensions/WinDimensions";

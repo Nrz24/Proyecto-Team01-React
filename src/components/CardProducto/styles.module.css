@@ -13,6 +13,11 @@
 
 }
 
+.cardImage {
+    width: fit-content;
+
+}
+
 .cardTexto {
     font-size: 18px;
     font-weight: 500;

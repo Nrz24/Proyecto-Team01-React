@@ -17,7 +17,11 @@ export const Tellafriend = () => {
           <Elipse name='whatsapp' isHeader={ false } path='Tellafriends'/>
           <Elipse name='youtube' isHeader={ false } path='Tellafriends'/>
           <Elipse name='telegrama' isHeader={ false } path='Tellafriends'/>
+<<<<<<< HEAD
           {/* <i className="fa-solid fa-check"></i> */}
+=======
+         {/*  <i className="fa-solid fa-check"></i> */}
+>>>>>>> master
         </div>  
           
     </div>
