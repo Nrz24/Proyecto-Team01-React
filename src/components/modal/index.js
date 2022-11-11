@@ -9,7 +9,7 @@ const Modal = ({children,estado, cambiarEstado }) => {
           <div className={styles.contenedor_modal}>            
                    <div className={styles.contenedor_modal_interno}>
                         <div className={styles.encabezado}>
-                            <h3>Titulo</h3>
+                            <h3>Carrito</h3>
                             <button onClick={()=>cambiarEstado(false)}>X</button>
                         </div>
                         {children}

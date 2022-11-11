@@ -40,11 +40,16 @@ const Header = (props) => {
     <Modal estado={estadoModal} cambiarEstado={cambiarEstadoModal}>
       {cartItems.length > 0 ?
         <div>
-            <h1>Ventana modal</h1>
-            <p>Pproducto :{cartItems[0].texto}</p>
-            <p>Cantidad :{cantidadItems}</p>
+            {cartItems.map((data) => {
+                return (
+                  <li>{data.nombre} : {data.qty}</li>
+                 
+                )
+                
+            })}
+            <p>Total :{cantidadItems}</p>
         </div>
-        : <h2>no hya compras realizadas</h2>
+        : <h2>no hay compras realizadas</h2>
       }
     </Modal>
     </>
