@@ -47,7 +47,7 @@ const Header = (props) => {
     <Modal estado={estadoModal} cambiarEstado={cambiarEstadoModal}>
       
       {cartItems.length > 0 ?
-        <div>
+        <div className={style.contenedor_tabla}>
           <table>
             <thead>
               <th>PRODUCTO</th>
@@ -68,9 +68,9 @@ const Header = (props) => {
                 )
                 
             })}
-            <p>Total :{valorTotal.toFixed(2)}</p>
-            </table>
             
+            </table>
+            <p>Total Compras :{valorTotal.toFixed(2)}</p>
         </div>
         : <h2>No hay compras realizadas</h2>
       }

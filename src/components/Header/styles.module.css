@@ -27,7 +27,10 @@
     margin-left: -50px;
     font-size: 10px;
 }
-
+.contenedor_tabla{
+    margin-left: 40px;
+    
+}
 thead{
     background: #81bbea;
 }
