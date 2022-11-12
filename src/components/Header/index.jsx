@@ -6,7 +6,7 @@ import Modal from '../modal';
 import Button from '../Button';
 
 const Header = (props) => {
-  const {cartItems, onAdd, onRemove} = props;
+  const {cartItems, onAdd, onRemove, onCancelShop} = props;
 
 
   const [estadoModal, cambiarEstadoModal] = useState(false);
@@ -68,7 +68,7 @@ const Header = (props) => {
                           <button onClick={()=>onAdd(data.product)} style={{color : 'green'}}> + </button>
                           <button onClick={()=>onRemove(data)} style={{color : 'red'}}>  -  </button>
                       </td>
-                      <td>{Number(data.qty )* Number(data.precio)}</td>                    
+                      <td>{(Number(data.qty )* Number(data.precio)).toFixed(2)}</td>                    
                       </tr></tbody>
                   
                 )
@@ -76,7 +76,12 @@ const Header = (props) => {
             })}            
             </table>
             <p>Total Compras :{valorTotal.toFixed(2)}</p>
-            <Button texto="Pagar"></Button>
+            <div className={style.shopButtons}>
+              <div onClick={onCancelShop}> <Button texto="Cancelar"/> </div>
+              
+              <Button texto="Pagar"></Button>
+            </div>
+            
         </div>
         : <h2>No hay compras realizadas</h2>
       }

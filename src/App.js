@@ -57,6 +57,9 @@ function App() {
       );
     }
   }
+  const onCancelShop = () => {
+      setCartItems([]);
+  }
 
   console.log("Carrito:", cartItems);
 
@@ -67,7 +70,7 @@ function App() {
           <Warning title="Free Delivery over $100. Gift with Purchase over $150" />
         </div>
         <div className="contenedor-header">
-          <Header cartItems={cartItems} onAdd={onAdd} onRemove={onRemove}/>
+          <Header cartItems={cartItems} onAdd={onAdd} onRemove={onRemove} onCancelShop={onCancelShop}/>
         </div>
         <div>
           <Banner />
