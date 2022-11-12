@@ -6,7 +6,7 @@ import Modal from '../modal';
 import Button from '../Button';
 
 const Header = (props) => {
-  const {cartItems, onOpenModal, isOpenModal} = props;
+  const {cartItems, onAdd, onRemove} = props;
 
 
   const [estadoModal, cambiarEstadoModal] = useState(false);
@@ -51,21 +51,25 @@ const Header = (props) => {
       {cartItems.length > 0 ?
         <div className={style.contenedor_tabla}>
           <table>
-            <thead>
+            <thead><tr>
               <th>PRODUCTO</th>
               <th>PRECIO</th>
               <th>CANTIDAD</th>
               <th>TOTAL</th>
-            </thead>
+              </tr></thead>
           
             {cartItems.map((data) => {
                 return (
-                  <tbody>
+                  <tbody><tr>
                       <td key={data.id} >{data.nombre}</td>
                       <td>{data.precio}</td>
-                      <td>{data.qty}</td>
+                      <td>
+                          {data.qty}
+                          <button onClick={()=>onAdd(data.product)} style={{color : 'green'}}> + </button>
+                          <button onClick={()=>onRemove(data)} style={{color : 'red'}}>  -  </button>
+                      </td>
                       <td>{Number(data.qty )* Number(data.precio)}</td>                    
-                  </tbody>
+                      </tr></tbody>
                   
                 )
                 

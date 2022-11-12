@@ -1,6 +1,7 @@
 {
   "pizza":{
   "id": 1,
+  "product":"pizza",
   "imagen": "./images/pizza.png",
   "texto": "Pepperoni Pizza",
   "precioDcto": "19.99",
@@ -9,6 +10,7 @@
 },
 "pancakes":{
   "id": 2,
+  "product":"pancakes",
   "imagen": "./images/pancakes.png",
   "texto": "Baked Pancakes",
   "precioDcto": "17.99",
@@ -17,6 +19,7 @@
 },
 "avocado":{
   "id": 3,
+  "product":"avocado",
   "imagen": "./images/avocado.png",
   "texto": "Avocado",
   "precioDcto": "17.99",
@@ -25,6 +28,7 @@
 },
 "orange":{
   "id": 4,
+  "product":"orange",
   "imagen": "./images/orange.png",
   "texto": "Bunch of Oranges",
   "precioDcto": "24.99",
@@ -33,6 +37,7 @@
 },
 "beer":{
   "id": 5,
+  "product":"beer",
   "imagen": "./images/beer.png",
   "texto": "Beer",
   "precioDcto": "4.99",
@@ -40,7 +45,8 @@
   "textoBoton": "Quick Shop"
 },
 "burger":{
-  "id": 4,
+  "id": 6,
+  "product":"burger",
   "imagen": "./images/burger.png",
   "texto": "Hamburger",
   "precioDcto": "16.99",

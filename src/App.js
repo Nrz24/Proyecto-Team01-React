@@ -43,6 +43,21 @@ function App() {
       ]);
     }
   };
+  const onRemove = (product) => {
+    const prodToAdd = product; // Con pizza, obtendo del archivo products.json el objeto Piza
+    //Busco si el carrito ya tiene ese producto cargado
+    const prodExists = cartItems.find((x) => x.id === prodToAdd.id);
+    if (prodExists.qty ===1) {// si solo tengo un artículo, lo borro de la lista
+      setCartItems(  cartItems.filter((x) => x.id !== prodToAdd.id )   );
+    } else{
+      setCartItems(
+        cartItems.map((x) =>
+          x.id === prodToAdd.id ? { ...prodExists, qty: prodExists.qty - 1 } : x
+        )
+      );
+    }
+  }
+
   console.log("Carrito:", cartItems);
 
   return (
@@ -52,7 +67,7 @@ function App() {
           <Warning title="Free Delivery over $100. Gift with Purchase over $150" />
         </div>
         <div className="contenedor-header">
-          <Header cartItems={cartItems} onOpenModal={onOpenModal} isOpenModal={isOpenModal}/>
+          <Header cartItems={cartItems} onAdd={onAdd} onRemove={onRemove}/>
         </div>
         <div>
           <Banner />
