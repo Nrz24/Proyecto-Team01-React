@@ -27,11 +27,31 @@
     margin-left: -50px;
     font-size: 10px;
 }
+<<<<<<< HEAD
 
 .contenedor_logo {}
 
 .imagen_logo {}
+=======
+.contenedor_tabla{
+    margin-left: 40px;
+    
+}
+thead{
+    background: #81bbea;
+}
+th{
+    color:#ffff;
+}
 
+th,td{
+    padding: 10px;
+}
+>>>>>>> master
+
+p{
+   padding: 20px;
+}
 
 
 
