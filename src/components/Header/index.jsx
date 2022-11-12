@@ -3,6 +3,7 @@ import { Elipse } from '../Elipse';
 import Textomenu from '../Textomenu';
 import style from './styles.module.css'
 import Modal from '../modal';
+import Button from '../Button';
 
 const Header = (props) => {
   const {cartItems} = props;
@@ -67,10 +68,10 @@ const Header = (props) => {
                   
                 )
                 
-            })}
-            
+            })}            
             </table>
             <p>Total Compras :{valorTotal.toFixed(2)}</p>
+            <Button texto="Pagar"></Button>
         </div>
         : <h2>No hay compras realizadas</h2>
       }
