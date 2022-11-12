@@ -1,15 +1,9 @@
 import React, { useState } from 'react'
 import { Elipse } from '../Elipse';
 import Textomenu from '../Textomenu';
-<<<<<<< HEAD
-import style from './styles.module.css';
-import ShopCartModal from "../ShopCartModal/ShopCartModal"
-
-=======
 import style from './styles.module.css'
 import Modal from '../modal';
 import Button from '../Button';
->>>>>>> master
 
 const Header = (props) => {
   const {cartItems, onOpenModal, isOpenModal} = props;
@@ -21,15 +15,11 @@ const Header = (props) => {
     (previousValue, item) => previousValue + item.qty,
     0
   );
-<<<<<<< HEAD
-  
-=======
 
   let valorTotal = cartItems.reduce(
     (previousValue, valor) => previousValue + ( Number(valor.qty)*Number(valor.precio)),0
   )
   console.log("Cantidad: ", cantidadItems)
->>>>>>> master
   return (
     <>
     <div className={style.navbar}>
@@ -49,22 +39,12 @@ const Header = (props) => {
       <div className={style.contenedor_elipse}>        
         <Elipse name='lupa' isHeader={ true } path='Header'/>
         <Elipse name='usuario' isHeader={ true } path='Header' />
-<<<<<<< HEAD
-        <Elipse name='carrito' isHeader={ true } path='Header'/>
-        <button className={ style.total } onClick={()=>onOpenModal(isOpenModal)} >{cantidadItems}</button>
-      </div>
-      <div >
-        {isOpenModal && <ShopCartModal  
-                            cartItems={cartItems} onOpenModal={onOpenModal} isOpenModal={isOpenModal}/>}
-      </div>
-=======
         <div onClick={()=>cambiarEstadoModal(!estadoModal)}>
             <Elipse name='carrito' isHeader={ true } path='Header'/>
         </div>
         
         <div  className={ style.total }>{cantidadItems}</div>
       </div>      
->>>>>>> master
     </div>
     <Modal estado={estadoModal} cambiarEstado={cambiarEstadoModal}>
       
