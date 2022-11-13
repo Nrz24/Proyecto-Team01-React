@@ -50,7 +50,7 @@ const Header = (props) => {
       
       {cartItems.length > 0 ?
         <div className={style.contenedor_tabla}>
-          <table>
+          <table className={style.tabla_interna}>
             <thead><tr>
               <th>PRODUCTO</th>
               <th>PRECIO</th>
@@ -63,7 +63,7 @@ const Header = (props) => {
                   <tr key={data.id}>
                       <td  >
                         <img className={style.cardImage} src={require(`${data.imagen}`)} alt={data.texto}></img>
-                        {data.nombre}
+                        {data.texto}
                       </td>
                       <td>{data.precio}</td>
                       <td>
@@ -77,9 +77,17 @@ const Header = (props) => {
                 )
                 
             })}
-            </tbody>            
+            </tbody>
+            <tfoot>
+              <tr> 
+                <td >Total Compras :</td> 
+                <td></td>
+                <td></td>
+                <td>{valorTotal.toFixed(2)}</td> 
+              </tr>
+            </tfoot>            
             </table>
-            <p>Total Compras :{valorTotal.toFixed(2)}</p>
+            
             <div className={style.shopButtons}>
               <div onClick={onCancelShop}> <Button texto="Cancelar"/> </div>
               

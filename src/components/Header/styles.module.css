@@ -29,8 +29,12 @@
 }
 
 .contenedor_tabla {
-    margin-left: 40px;
+    padding-left: 40px;
 
+}
+
+.tabla_interna {
+    width: fit-content;
 }
 
 thead {
@@ -53,6 +57,7 @@ p {
 .shopButtons {
     display: flex;
     flex-direction: row;
+    justify-content: space-evenly;
 }
 
 .cardImage {
