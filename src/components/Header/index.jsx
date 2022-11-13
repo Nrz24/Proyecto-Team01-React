@@ -57,11 +57,15 @@ const Header = (props) => {
               <th>CANTIDAD</th>
               <th>TOTAL</th>
               </tr></thead>
-          
+              <tbody> 
             {cartItems.map((data) => {
+              const pathImage="../CardProducto"+data.imagen.slice(1);
                 return (
-                  <tbody><tr>
-                      <td key={data.id} >{data.nombre}</td>
+                  <tr key={data.id}>
+                      <td  >
+                        <img className={style.cardImage} src={require(`${data.imagen}`)} alt={data.texto}></img>
+                        {data.nombre}
+                      </td>
                       <td>{data.precio}</td>
                       <td>
                           {data.qty}
@@ -69,11 +73,12 @@ const Header = (props) => {
                           <button onClick={()=>onRemove(data)} style={{color : 'red'}}>  -  </button>
                       </td>
                       <td>{(Number(data.qty )* Number(data.precio)).toFixed(2)}</td>                    
-                      </tr></tbody>
+                  </tr>
                   
                 )
                 
-            })}            
+            })}
+            </tbody>            
             </table>
             <p>Total Compras :{valorTotal.toFixed(2)}</p>
             <div className={style.shopButtons}>
