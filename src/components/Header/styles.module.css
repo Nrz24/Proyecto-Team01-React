@@ -32,6 +32,17 @@
     padding-left: 40px;
 
 }
+.totales{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 30px;
+}
+
+.contenidoModal{
+    color:#FF8126;
+    text-align: center;
+}
 
 .tabla_interna {
     width: fit-content;
