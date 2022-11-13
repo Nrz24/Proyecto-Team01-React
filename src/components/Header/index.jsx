@@ -71,7 +71,7 @@ const Header = (props) => {
                   <tr key={data.id}>
                       <td  >
                         <img className={style.cardImage} src={require(`${data.imagen}`)} alt={data.texto}></img>
-                        {data.nombre}
+                        {data.texto}
                       </td>
                       <td>{data.precio}</td>
                       <td>
@@ -95,11 +95,7 @@ const Header = (props) => {
               </tr>
             </tfoot>            
             </table>
-            <div className={style.totales}>
-              <div className={style.totalCompra}>Total Compras :</div>
-              <div className={style.valortotal}>{valorTotal.toFixed(2)}</div>
-            </div>
-            {/* <p>Total Compras :{valorTotal.toFixed(2)}</p> */}
+                       
             <div className={style.shopButtons}>
                 <div onClick={onCancelShop}> 
                     <Button texto="Cancelar"/> 
