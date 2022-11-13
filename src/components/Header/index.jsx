@@ -59,7 +59,6 @@ const Header = (props) => {
               </tr></thead>
               <tbody> 
             {cartItems.map((data) => {
-              const pathImage="../CardProducto"+data.imagen.slice(1);
                 return (
                   <tr key={data.id}>
                       <td  >
