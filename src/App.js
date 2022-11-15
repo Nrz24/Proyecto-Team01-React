@@ -75,7 +75,7 @@ function App() {
         </div>
         <div>
           <Banner />
-          <LatestOffers cartItems={cartItems} onAdd={onAdd} />
+          <LatestOffers cartItems={cartItems} onAdd={onAdd}  />
           <WhyChoose />
           <WhoMakes/>
           <SurpriseSomeone />
