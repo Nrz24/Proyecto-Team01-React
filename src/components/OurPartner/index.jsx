@@ -8,7 +8,7 @@ const OurPartner = () => {
         
         <div>
             <div className={styles.OurContainer}>
-                {/* <img src="./images/OurPartner.png" alt="" /> */}
+                {<img src="./images/OurPartner.png" alt="" /> }
                 <div className={styles.buttonContainer}>
                     <button className={styles.button}>Learm more about City Bakery</button>
                 </div>

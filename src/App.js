@@ -11,6 +11,7 @@ import SurpriseSomeone from "./components/SurpriseSomeone/SurpriseSomeone";
 import { useState } from "react";
 import Producto from "./data/products.json";
 import WhoMakes from "./components/WhoMakes";
+import OurPartner from "./components/OurPartner";
 
 
 function App() {
