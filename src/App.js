@@ -16,13 +16,13 @@ import WhoMakes from "./components/WhoMakes";
 
 function App() {
   const [cartItems, setCartItems] = useState([]); //inicializo el carrito
-  const [isOpenModal, setOpenModal] = useState(false); //inicializo el Modal
+ /*  const [isOpenModal, setOpenModal] = useState(false); //inicializo el Modal */
   // ==================FUNCIONES  DE MODAL ============================
-  const onOpenModal = (isOpenModal) => {
+ /*  const onOpenModal = (isOpenModal) => {
     console.log("modal:", isOpenModal)
     setOpenModal(isOpenModal= !isOpenModal);
     console.log("se activó el modal:", isOpenModal)
-  };
+  }; */
 
   // ==================FUNCIONES  DE CARRITO============================
   const onAdd = (product) => {

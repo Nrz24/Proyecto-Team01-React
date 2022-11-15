@@ -10,6 +10,13 @@ const Header = (props) => {
 
 
   const [estadoModal, cambiarEstadoModal] = useState(false);
+  const [estadoModal2, cambiarEstadoModal2] = useState(false);
+
+  const cambiaEstados = ()=>{
+        cambiarEstadoModal(false);
+        cambiarEstadoModal2(true);
+        onCancelShop();
+  }
 
   let cantidadItems = cartItems.reduce(
     (previousValue, item) => previousValue + item.qty,
@@ -46,7 +53,7 @@ const Header = (props) => {
         <div  className={ style.total }>{cantidadItems}</div>
       </div>      
     </div>
-    <Modal estado={estadoModal} cambiarEstado={cambiarEstadoModal}>
+    <Modal estado={estadoModal} cambiarEstado={cambiarEstadoModal} nombre='Carrito'>
       
       {cartItems.length > 0 ?
         <div className={style.contenedor_tabla}>
@@ -59,6 +66,7 @@ const Header = (props) => {
               </tr></thead>
               <tbody> 
             {cartItems.map((data) => {
+              console.log('contendio',cartItems);
                 return (
                   <tr key={data.id}>
                       <td  >
@@ -87,17 +95,24 @@ const Header = (props) => {
               </tr>
             </tfoot>            
             </table>
-            
+                       
             <div className={style.shopButtons}>
-              <div onClick={onCancelShop}> <Button texto="Cancelar"/> </div>
-              
-              <Button texto="Pagar"></Button>
+                <div onClick={onCancelShop}> 
+                    <Button texto="Cancelar"/> 
+                </div>
+                <div onClick={cambiaEstados}>
+                    <Button texto="Pagar"></Button>
+                </div>             
+                
             </div>
             
         </div>
-        : <h2>No hay compras realizadas</h2>
+        : <h3 className={style.contenidoModal}>Su carrito esta vacío!</h3>
       }
-    </Modal>
+     </Modal>
+     <Modal estado={estadoModal2} cambiarEstado={cambiarEstadoModal2} nombre='Transaccion finalizada'>
+          <h3 className={style.contenidoModal}>Compra realizada con exito!</h3>
+      </Modal>
     </>
     
   )
