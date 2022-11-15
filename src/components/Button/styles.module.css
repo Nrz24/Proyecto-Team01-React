@@ -3,10 +3,12 @@
 /*font-family: 'Poppins', sans-serif;*/
 .botonNaranja {
     width: 180px;
+    max-width: 80%;
     background-color: #FF8126;
     border-radius: 5px;
     border-style: none;
-    height: 45px;
+    min-height: 45px;
+    height: fit-content;
     color: white;
     font-family: 'Poppins', sans-serif;
     font-family: Poppins;
@@ -14,7 +16,7 @@
     font-weight: 500;
     line-height: 27px;
     letter-spacing: 0em;
-    
+
 }
 
 .botonNaranja:hover {

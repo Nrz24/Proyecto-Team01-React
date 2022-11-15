@@ -1,6 +1,7 @@
 
 import React from 'react'
 import styles from "./styles.module.css"
+import Button from '../Button';
 
 const OurPartner = () => {
     return (
@@ -10,7 +11,7 @@ const OurPartner = () => {
             <div className={styles.OurContainer}>
                 {<img src="./images/OurPartner.png" alt="" /> }
                 <div className={styles.buttonContainer}>
-                    <button className={styles.button}>Learm more about City Bakery</button>
+                    <Button texto="Learn More About premium Bakery"> </Button> 
                 </div>
             
             </div>
