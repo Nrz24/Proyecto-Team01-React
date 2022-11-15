@@ -11,14 +11,14 @@ import SurpriseSomeone from "./components/SurpriseSomeone/SurpriseSomeone";
 import { useState } from "react";
 import Producto from "./data/products.json";
 import WhoMakes from "./components/WhoMakes";
-import OurPartner from "./components/OurPartner"
+import OurPartner from "./components/OurPartner";
 
 
 function App() {
   const [cartItems, setCartItems] = useState([]); //inicializo el carrito
  /*  const [isOpenModal, setOpenModal] = useState(false); //inicializo el Modal */
   // ==================FUNCIONES  DE MODAL ============================
- /*  const onOpenModal = (isOpenModal) => {
+  /*  const onOpenModal = (isOpenModal) => {
     console.log("modal:", isOpenModal)
     setOpenModal(isOpenModal= !isOpenModal);
     console.log("se activó el modal:", isOpenModal)
@@ -79,6 +79,7 @@ function App() {
           <LatestOffers cartItems={cartItems} onAdd={onAdd}  />
           <WhyChoose />
           <WhoMakes/>
+          <OurPartner/>
           <SurpriseSomeone />
           <Instagram />
           <Tellafriend />
