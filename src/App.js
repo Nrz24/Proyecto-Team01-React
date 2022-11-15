@@ -6,7 +6,6 @@ import Warning from "./components/Warning";
 import LatestOffers from "./components/LatestOffers";
 import Banner from "./components/Banner";
 import WhyChoose from "./components/WhyChoose";
-import WHoMakes from "./components/WhoMakes";
 import Footer from "./components/Footer/Footer";
 import SurpriseSomeone from "./components/SurpriseSomeone/SurpriseSomeone";
 import { useState } from "react";
