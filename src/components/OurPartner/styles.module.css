@@ -38,7 +38,12 @@
         margin: 10px;
         width: 100%;
         justify-content: center;
-        
+        background-size:contain
+    }
+    .buttonContainer{
+        width: 105%;
+        margin-bottom: 160px;
+        justify-content: center;
     }
 }
 @media only screen and (max-width: 412px){
@@ -53,6 +58,11 @@
     .buttonContainer Button{
         justify-content: center;
         margin: 1rem;
+    }
+    .buttonContainer{
+        width: 105%;
+        margin-top: 100%;
+        justify-content: center;
     }
 }
 
