@@ -11,7 +11,7 @@ const OurPartner = () => {
             <div className={styles.OurContainer}>
                 {<img src="./images/OurPartner.png" alt="" /> }
                 <div className={styles.buttonContainer}>
-                    <Button texto="Learn More About premium Bakery"> </Button> 
+                    <Button texto="Learn More about City Bakery"> </Button> 
                 </div>
             
             </div>
