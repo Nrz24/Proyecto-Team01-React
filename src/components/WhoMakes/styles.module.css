@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,500;0,600;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 
 .whoContainer{
     display: flex;
@@ -7,6 +9,7 @@
     flex-direction: column;
     margin: 0px 15px 170px 20px;
     padding: 0;
+    
 }
 .whoTituloNegro {
     padding: 50px 0px 0px 50px;
@@ -17,11 +20,13 @@
     font-weight: 700;
     font-size: 40px;
     text-align: start;
+    font-family: 'Cormorant', serif;
 }
 .whoTituloNaranja {
     display: flex;
     color:  #1F1F1F;
-    padding: 0px 0px 0px 5px;
+    padding: 0px 0px 0px 10px;
+    font-family: 'Cormorant', serif;
 }
 .whoContainerimg{
     background-image: url(./images/fotoMano.png);
@@ -45,6 +50,8 @@
     font-weight: 500;
     margin: 0px 0px 20px 40px;
     width: 45%;
+    font-family: 'Poppins', sans-serif;
+    font-weight: medium;
 }
 .whoButton{
     margin: 0px 0px 0px 50px;
@@ -67,6 +74,7 @@
     margin: 25px;
     display: flex;
     flex-direction: column;
+    font-family: 'Poppins', sans-serif;
     
 
 }
@@ -83,6 +91,7 @@
     background-position: left center;
     background-size: 25px;
     flex-wrap: wrap;
+    font-family: 'Poppins', sans-serif;
 }
 .buttonList Button{
     width: 20%;
@@ -99,12 +108,14 @@
         margin: 0;
         width: 100%;
         display: flex;
+        
     }
     .whoList li {
         margin: 0;
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
+        
     }
     .whoTituloNegro{
         display: flex;
@@ -112,21 +123,28 @@
         width: 90%;
         margin: 0;
     }
+    .buttonList Button{
+        margin-top: 2.5rem;
+        width: 40%;
+        
+    }
 
 }
 
-@media only screen and (max-width: 512px) {
+@media only screen and (max-width: 412px) {
     
     .whoList{
         margin: 50px 20px 20px 20px;
         width: 100%;
         display: flex;
+        font-family: 'Poppins', sans-serif;
     }
     .whoList li {
         margin: 0;
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
+        font-family: 'Poppins', sans-serif;
     }
     .whoTituloNegro{
         display: flex;
@@ -137,9 +155,16 @@
     .buttonList Button{
         margin-top: 2.5rem;
         width: 60%;
-        justify-content: center;
-        align-items: center;
     }
+    .whoParrafo{
+        width: 70%;
+        margin-top: 25px;
+        margin-bottom: 55px;
+        font-family: 'Poppins', sans-serif;
+        font-weight: medium;
+    }
+    
+    
 
 }
 
