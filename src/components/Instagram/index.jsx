@@ -7,7 +7,7 @@ const Instagram = () => {
     
       <div className={ style.contenedor_instagram }>
         <div className={ style.title }>
-            <h2><span>@PremiumBakeryQuality</span> on Instagram</h2>
+            <h2><span className={style.tituloNaranja}>@PremiumBakeryQuality</span> on Instagram</h2>
         </div>
         
          <Carousel infiniteLoop={true} cardWidth="270" >

@@ -29,7 +29,7 @@
     width: 60px;
     height: 60px;
     float: left;
-    margin-right: 25px;
+    margin: 10px 25px;
     text-align: center;
     justify-content: center;
     background-color: #FF8126;
@@ -40,7 +40,7 @@
 }
 
 
-@media only screen and (max-width: 412px ){
+@media only screen and (max-width: 412px) {
     .contenedor_elipse_friends {
         width: 40px;
         height: 40px;
@@ -51,5 +51,5 @@
         width: 50%;
         height: 50%;
     }
- 
- }
+
+}
