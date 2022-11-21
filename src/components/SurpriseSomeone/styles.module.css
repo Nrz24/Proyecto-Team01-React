@@ -2,17 +2,17 @@
 
 .contenedor{
   display: flex;
-  padding: 30px;
-  
+  align-content: ;
 }
 
 .contenedor_imagen{
-    width: 100%;
+    width: auto;
 }
 
 
 .text {
-    padding: 30px;
+    padding-left: 30px;
+    margin: 30px;
 }
 
 .tituloNaranja{

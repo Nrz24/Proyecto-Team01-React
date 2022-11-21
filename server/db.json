@@ -1,0 +1,117 @@
+{
+    "bakery": {
+        "breakfast": [
+            {
+                "id": "1",
+                "name": "Baked Pancakes"
+            },
+            {
+                "id": "2",
+                "name": "French Toast"
+            },
+            {
+                "id": "3",
+                "name": "Kiwi"
+            },
+            {
+                "id": "4",
+                "name": "Lemon Juice"
+            },
+            {
+                "id": "5",
+                "name": "Avocado"
+            },
+            {
+                "id": "6",
+                "name": "Lemonade"
+            },
+            {
+                "id": "7",
+                "name": "Chocolate Cake"
+            },
+            {
+                "id": "8",
+                "name": "Cheese Cake"
+            },
+            {
+                "id": "9",
+                "name": "Latte Macchiato"
+            },
+            {
+                "id": "10",
+                "name": "Strawberries"
+            },
+            {
+                "id": "11",
+                "name": "Buffalo Mozzarella with Marinated Tomato and Basil Pesto"
+            },
+            {
+                "id": "12",
+                "name": "Hot Chocolate"
+            },
+            {
+                "id": "13",
+                "name": "Coffee"
+            },
+            {
+                "id": "14",
+                "name": "Finger Sandwiches"
+            },
+            {
+                "id": "15",
+                "name": "Handmade Bonbons and Macarons"
+            }
+        ],
+        
+        "lunch": [
+            {
+            "id": "16",
+            "name": "Pepperoni Pizza"
+            },
+            {
+                "id": "2",
+                "name": "Pineapple Pizza"
+            },
+            {
+                "id": "3",
+                "name": "Burger"
+            },
+            {
+                "id": "4",
+                "name": "Double Cheese Burger"
+            },
+            {
+                "id": "5",
+                "name": "Caesar Salad Grilled Chicken / Grilled Prawns"
+            },
+            {
+                "id": "6",
+                "name": "Mixed Salad with Smoked Duck Breast, Beetroot and Horseradish Dressing"
+            },
+            {
+                "id": "7",
+                "name": "Rigatoni Arrabiata"
+            },
+            {
+                "id": "8",
+                "name": "Tagliatelle with Wild Mushroom and Ricotta"
+            },
+            {
+                "id": "9",
+                "name": "Beef Goulash Soup"
+            },
+            {
+                "id": "10",
+                "name": "Tomato Soup"
+            },
+            {
+                "id": "11",
+                "name": "Breaded Pork Loin"
+            },
+            {
+                "id": "12",
+                "name": "Rib-Eye Steak with Lettuce"
+            }
+        ]
+    }
+}
