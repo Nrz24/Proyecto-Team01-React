@@ -32,21 +32,23 @@
     padding-left: 40px;
 
 }
-.totales{
+
+.totales {
     display: flex;
     align-items: center;
     justify-content: space-around;
     padding: 30px;
 }
 
-.contenidoModal{
-    color:#FF8126;
+.contenidoModal {
+    color: #FF8126;
     text-align: center;
+    font-family: 'Poppins', sans-serif;
 }
 
 .tabla_interna {
-    width: fit-content;
-   
+    width: 95%;
+
 }
 
 thead {
@@ -62,14 +64,13 @@ td {
     padding: 10px;
 }
 
-p {
-    padding: 20px;
-}
+
 
 .shopButtons {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    padding-top: 15px;
 }
 
 .cardImage {
@@ -93,11 +94,33 @@ p {
     .contenedor_elipse {
         margin-left: -490px;
         margin-bottom: -80px;
+    }
 
+    .cardImage {
+        display: none;
+    }
 
+    .contenedor_tabla {
+        padding-left: 4px;
 
+    }
+
+    .totales {
+        padding: 5px;
+    }
+
+<<<<<<< HEAD
     } 
+=======
+    .contenidoModal {
+        font-size: 15px;
+    }
+>>>>>>> origin
 
+    th,
+    td {
+        padding: 3px;
+    }
 }
 
 
