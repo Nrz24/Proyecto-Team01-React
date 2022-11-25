@@ -10,8 +10,8 @@
     background-image: url("./images/banner_img.png");
     background-size: cover;
     background-repeat: no-repeat;
-    height: 30vw;
-    min-height: 250px;
+    height: 18vw;
+    min-height: 180px;
     width: auto;
     display: flex;
     flex-direction: column;
