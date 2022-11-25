@@ -1,9 +1,10 @@
 import React, { useState } from 'react'
 import { Elipse } from '../Elipse';
-import Textomenu from '../Textomenu';
 import style from './styles.module.css'
 import Modal from '../modal';
-import Button from '../Button';
+import Button from '../Button'
+import BurguerButton from './../BurguerButton/BurguerButton';
+import styled from "styled-components";
 
 const Header = (props) => {
   const {cartItems, onAdd, onRemove, onCancelShop} = props;
@@ -11,6 +12,11 @@ const Header = (props) => {
 
   const [estadoModal, cambiarEstadoModal] = useState(false);
   const [estadoModal2, cambiarEstadoModal2] = useState(false);
+  const [clickMenu, setClickMenu] = useState(false);
+
+  const handleClick = ()=>{
+    setClickMenu(!clickMenu);
+  }
 
   const cambiaEstados = ()=>{
         cambiarEstadoModal(false);
@@ -18,6 +24,9 @@ const Header = (props) => {
         onCancelShop();
   }
 
+
+
+  
   let cantidadItems = cartItems.reduce(
     (previousValue, item) => previousValue + item.qty,
     0
@@ -29,30 +38,40 @@ const Header = (props) => {
   console.log("Cantidad: ", cantidadItems)
   return (
     <>
-    <div className={style.navbar}>
+    <Nabvar>    
       <div className={style.contenedor_logo}>
         <img
           className={style.imagen_logo}
           src={require('./images/logo.png')}
           alt='Logo Empresa' />
+      </div>  
+     {console.log('el valor de clickMenu es:', clickMenu)}
+      <div className={`contenedor_menu ${clickMenu ? 'active ' : ''}` }>       
+          {/* <Textomenu menu='Ocassions'/>   
+          <Textomenu menu='All Categories'/>
+          <Textomenu menu='Gifts & Bundles'/>
+          <Textomenu menu='Our Brands'/>
+          <Textomenu menu='About Us'/>  */}
+                    <a href='/'>Ocassions</a>
+                    <a href='/'>All Categories</a>
+                    <a href='/'>Gifts & Bundles</a>
+                    <a href='/'>Our Brands</a>
+                    <a href='/'>About Us</a>
       </div>      
-      <div className={style.contenedor_menu}>       
-        <Textomenu menu='Ocassions'/>     
-        <Textomenu menu='All Categories'/>
-        <Textomenu menu='Gifts & Bundles'/>
-        <Textomenu menu='Our Brands'/>
-        <Textomenu menu='Abaout Us'/> 
-      </div>
       <div className={style.contenedor_elipse}>        
         <Elipse name='lupa' isHeader={ true } path='Header'/>
         <Elipse name='usuario' isHeader={ true } path='Header' />
         <div onClick={()=>cambiarEstadoModal(!estadoModal)}>
             <Elipse name='carrito' isHeader={ true } path='Header'/>
-        </div>
-        
+        </div>        
         <div  className={ style.total }>{cantidadItems}</div>
-      </div>      
-    </div>
+      </div>
+      <div className='burguer'>
+          <BurguerButton clickMenu={clickMenu}  handleClick={handleClick}/>
+      </div>       
+    
+    </Nabvar>
+    
     <Modal estado={estadoModal} cambiarEstado={cambiarEstadoModal} nombre='Carrito'>
       
       {cartItems.length > 0 ?
@@ -119,3 +138,73 @@ const Header = (props) => {
 }
 
 export default Header;
+
+const Nabvar = styled.nav`
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 150px;
+    a{
+      text-decoration: none;
+      margin-right: 3rem;      
+    }
+    @media(min-width: 412px) {
+      margin-bottom: 0;
+    }
+ 
+   .contenedor_menu a:hover{
+      color:blue;
+      text-decoration: underline;
+    }
+    
+    .contenedor_menu{
+                position:absolute;
+                top: -700px;
+                left: -2000px;
+                margin-left: auto;
+                margin-right: auto; 
+                text-align: center;
+                a{
+                  display: block;
+                } 
+                @media(min-width: 412px){
+                     position:initial;
+                      margin:0;
+                     a{
+                      color:#333;
+                      display: inline;
+                     }    
+                } 
+           
+          }
+
+   .contenedor_menu.active{
+                    width: 100%;
+                    display: block;
+                    position: absolute;
+                    margin-left: auto;
+                    margin-right: auto;
+                    top:20%;
+                    left: 0;
+                    right: 0;
+                    text-align: center;
+                    
+                    a{
+                        
+                    }              
+          
+
+                    
+   }
+   
+   
+
+   .burguer{
+                padding-left: 20px;
+
+                @media(min-width:412px){
+                    display: none;
+                }
+            }
+
+`;
