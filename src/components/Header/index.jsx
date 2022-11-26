@@ -52,11 +52,11 @@ const Header = (props) => {
           <Textomenu menu='Gifts & Bundles'/>
           <Textomenu menu='Our Brands'/>
           <Textomenu menu='About Us'/>  */}
-                    <a href='/'>Ocassions</a>
-                    <a href='/'>All Categories</a>
-                    <a href='/'>Gifts & Bundles</a>
-                    <a href='/'>Our Brands</a>
-                    <a href='/'>About Us</a>
+                    <a href='#'>Ocassions</a>
+                    <a href='#'>All Categories</a>
+                    <a href='#'>Gifts & Bundles</a>
+                    <a href='#'>Our Brands</a>
+                    <a href='#'>About Us</a>
       </div>      
       <div className={style.contenedor_elipse}>        
         <Elipse name='lupa' isHeader={ true } path='Header'/>
@@ -141,6 +141,7 @@ export default Header;
 
 const Nabvar = styled.nav`
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 150px;
@@ -149,7 +150,7 @@ const Nabvar = styled.nav`
       margin-right: 3rem;      
     }
     @media(min-width: 412px) {
-      margin-bottom: 0;
+      margin-bottom: 0px;
     }
  
    .contenedor_menu a:hover{

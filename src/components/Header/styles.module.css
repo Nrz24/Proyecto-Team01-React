@@ -76,12 +76,18 @@ td {
         width: 50%;
     }
 
+    .contenidoModal {
+        font-size: 10px;
+    }
+
   .navbar {
-        justify-content: flex-start;
+        display: flex;
+        justify-content: space-between;
         margin-bottom: 200px;
         flex-direction: row;
     }
    
+    
     .contenedor_elipse {
         margin-left: -490px;
         margin-bottom: -80px;
