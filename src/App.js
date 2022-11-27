@@ -18,13 +18,6 @@ const BASE_URL = "http://localhost:8000/products";
 
 function App() {
   const [cartItems, setCartItems] = useState([]); //inicializo el carrito
- /*  const [isOpenModal, setOpenModal] = useState(false); //inicializo el Modal */
-  // ==================FUNCIONES  DE MODAL ============================
-  /*  const onOpenModal = (isOpenModal) => {
-    console.log("modal:", isOpenModal)
-    setOpenModal(isOpenModal= !isOpenModal);
-    console.log("se activó el modal:", isOpenModal)
-  }; */
 
   // ==================FUNCIONES  DE CARRITO============================
   const onAdd = async (product) => {
@@ -32,13 +25,12 @@ function App() {
    // const prodToAdd = Producto[product]; // Con pizza, obtendo del archivo products.json el objeto Piza
     const resultado =  await axios({
           method:'get',
-          url: `${BASE_URL}?product=${product}`,
+          url: `${BASE_URL}?product=${product}`, //filtro con axios el producto
         })
     
-    const prodToAdd=resultado.data[0];
-    console.log("ARchivo, producto:", prodToAdd)
-    //console.log("Axios, producto:",prodToAdd2)
-   // console.log("Query:", resultado.data[0])
+    const prodToAdd=resultado.data[0]; //como me devuelve una lista de objetos, me traigo el index0
+    console.log("AXIOS, producto:", prodToAdd)
+
     //Busco si el carrito ya tiene ese producto cargado
     const prodExists = cartItems.find((x) => x.id === prodToAdd.id);
     //busco en el array con map y si existe sobreescribo el producto sumandole 1 a la cantidad. Si no existe agrego prodToAdd a la lista del carrito, y le seteo la cantidad en 1 y el nombre
