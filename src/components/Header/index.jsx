@@ -26,7 +26,7 @@ const Header = (props) => {
   let valorTotal = cartItems.reduce(
     (previousValue, valor) => previousValue + ( Number(valor.qty)*Number(valor.precio)),0
   )
-  console.log("Cantidad: ", cantidadItems)
+  //console.log("Cantidad: ", cantidadItems)
   return (
     <>
     <div className={style.navbar}>
@@ -66,7 +66,7 @@ const Header = (props) => {
               </tr></thead>
               <tbody> 
             {cartItems.map((data) => {
-              console.log('contendio',cartItems);
+              //console.log('contendio',cartItems);
                 return (
                   <tr key={data.id}>
                       <td  >
