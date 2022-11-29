@@ -5,6 +5,7 @@ import Modal from '../modal';
 import Button from '../Button'
 import BurguerButton from './../BurguerButton/BurguerButton';
 import styled from "styled-components";
+/* import Textomenu from '../Textomenu'; */
 
 const Header = (props) => {
   const {cartItems, onAdd, onRemove, onCancelShop} = props;
@@ -47,16 +48,16 @@ const Header = (props) => {
       </div>  
      {console.log('el valor de clickMenu es:', clickMenu)}
       <div className={`contenedor_menu ${clickMenu ? 'active ' : ''}` }>       
-          {/* <Textomenu menu='Ocassions'/>   
+          {/* <Textomenu menu='Ocassiones'/>
           <Textomenu menu='All Categories'/>
           <Textomenu menu='Gifts & Bundles'/>
           <Textomenu menu='Our Brands'/>
-          <Textomenu menu='About Us'/>  */}
-                    <a href='#'>Ocassions</a>
-                    <a href='#'>All Categories</a>
-                    <a href='#'>Gifts & Bundles</a>
-                    <a href='#'>Our Brands</a>
-                    <a href='#'>About Us</a>
+          <Textomenu menu='About Us'/> */}
+                    <a href='/'>Ocassions</a>
+                    <a href='/'>All Categories</a>
+                    <a href='/'>Gifts & Bundles</a>
+                    <a href='/'>Our Brands</a>
+                    <a href='/'>About Us</a>
       </div>      
       <div className={style.contenedor_elipse}>        
         <Elipse name='lupa' isHeader={ true } path='Header'/>
@@ -144,12 +145,12 @@ const Nabvar = styled.nav`
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 150px;
+    margin-bottom: 180px;
     a{
       text-decoration: none;
       margin-right: 3rem;      
     }
-    @media(min-width: 412px) {
+    @media(min-width: 820px) {
       margin-bottom: 0px;
     }
  
@@ -168,7 +169,8 @@ const Nabvar = styled.nav`
                 a{
                   display: block;
                 } 
-                @media(min-width: 412px){
+                @media(min-width: 820px){
+                    
                      position:initial;
                       margin:0;
                      a{
@@ -185,7 +187,7 @@ const Nabvar = styled.nav`
                     position: absolute;
                     margin-left: auto;
                     margin-right: auto;
-                    top:20%;
+                    top:21%;
                     left: 0;
                     right: 0;
                     text-align: center;
@@ -196,16 +198,17 @@ const Nabvar = styled.nav`
           
 
                     
-   }
-   
+   }  
    
 
    .burguer{
                 padding-left: 20px;
 
-                @media(min-width:412px){
+                @media(min-width:820px){
                     display: none;
                 }
             }
+
+ 
 
 `;
