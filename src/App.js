@@ -12,22 +12,24 @@ import { useState } from "react";
 import Producto from "./data/products.json";
 import WhoMakes from "./components/WhoMakes";
 import OurPartner from "./components/OurPartner";
+import axios from "axios";
 
+const BASE_URL = "http://localhost:8000/products";
 
 function App() {
   const [cartItems, setCartItems] = useState([]); //inicializo el carrito
- /*  const [isOpenModal, setOpenModal] = useState(false); //inicializo el Modal */
-  // ==================FUNCIONES  DE MODAL ============================
-  /*  const onOpenModal = (isOpenModal) => {
-    console.log("modal:", isOpenModal)
-    setOpenModal(isOpenModal= !isOpenModal);
-    console.log("se activó el modal:", isOpenModal)
-  }; */
 
   // ==================FUNCIONES  DE CARRITO============================
-  const onAdd = (product) => {
+  const onAdd = async (product) => {
     const prodToAddName = product; // el producto que recibo como parámetro (ejemplo: Pizza)
-    const prodToAdd = Producto[product]; // Con pizza, obtendo del archivo products.json el objeto Piza
+   // const prodToAdd = Producto[product]; // Con pizza, obtendo del archivo products.json el objeto Piza
+    const resultado =  await axios({
+          method:'get',
+          url: `${BASE_URL}?product=${product}`, //filtro con axios el producto
+        })
+    
+    const prodToAdd=resultado.data[0]; //como me devuelve una lista de objetos, me traigo el index0
+    console.log("AXIOS, producto:", prodToAdd)
 
     //Busco si el carrito ya tiene ese producto cargado
     const prodExists = cartItems.find((x) => x.id === prodToAdd.id);
@@ -63,6 +65,7 @@ function App() {
       setCartItems([]);
   }
 
+  //
   console.log("Carrito:", cartItems);
 
   return (
