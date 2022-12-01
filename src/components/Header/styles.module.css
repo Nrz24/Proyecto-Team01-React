@@ -1,3 +1,85 @@
+/* para navbar */
+nav{
+    display: flex;
+    background-color: #ffff;
+    position: relative;
+    top: 20;
+    width: 100%;
+    height: 125px;
+    justify-content: space-around;
+}
+
+.list{    
+    list-style-type: none;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.items{
+    
+    margin-right: 40px;
+    font-size: 15px;
+    text-transform: uppercase;
+    color: #000;
+    cursor: pointer;
+}
+
+.items:hover{
+        text-decoration: underline;
+        color:blue
+}
+.boton{
+    margin-top: 20px;
+    display: none;
+    position: absolute;
+    right: 5px;      
+    padding: 5px;
+    color: #FF8126;
+    font-size: 60px;
+}
+
+@media screen and (max-width:500px){
+
+    img{
+        display: none;
+    }
+    
+
+    .list{
+        margin-top: 120px;
+        flex-direction: column;
+        height: auto;      
+        
+    }
+
+    .items:nth-child(1){
+        border-top: 1px solid rgba(255,129,38, .5);
+        margin-top: 200px;
+        background-color: #fff;
+    }
+
+    .items{
+        width: 100%;
+        
+        text-align: center;
+        padding: 10px;
+        /* margin-right: 0px; */
+        background-color: #fff;
+        border-bottom:1px solid rgba(255,129,38, .5); 
+    }
+
+    .boton{        
+        display: block;
+        position: absolute;
+        margin-right: 300px;
+    }
+}
+
+
+
 /* aplica flex a contendor de elipses */
 .contenedor_elipse {
     display: flex;
@@ -74,27 +156,19 @@ td {
 
 
 
-@media only screen and (max-width: 600px) {
-    img {
-        width: 55%;
-        
-    }
+@media only screen and (max-width: 500px) {
+    
 
     .contenidoModal {
         font-size: 10px;
     }
 
-  .navbar {
-        display: flex;
-        
-        justify-content: space-between;
-        margin-bottom: 200px;
-        flex-direction: row;
-    }
+ 
    
     
-    .contenedor_elipse {
-        margin-left: -100px;
+    .contenedor_elipse {   
+       
+        
         margin-bottom: -80px;
     }
 

@@ -1,6 +1,7 @@
 .contenedor_warning {
-    width: 100%;
+    width: 100vw;
     height: 50px;
+    max-width: 100%;
     background-color: #C2E8CE;
     font-family: 'Poppins';
     font-size: 14px;

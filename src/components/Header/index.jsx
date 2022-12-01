@@ -1,11 +1,10 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import { Elipse } from '../Elipse';
 import style from './styles.module.css'
 import Modal from '../modal';
 import Button from '../Button'
-import BurguerButton from './../BurguerButton/BurguerButton';
-import styled from "styled-components";
-/* import Textomenu from '../Textomenu'; */
+import {FiMenu} from 'react-icons/fi'
+import {AiOutlineUser,AiOutlineSearch,AiOutlineShoppingCart} from 'react-icons/ai'
 
 const Header = (props) => {
   const {cartItems, onAdd, onRemove, onCancelShop} = props;
@@ -13,11 +12,25 @@ const Header = (props) => {
 
   const [estadoModal, cambiarEstadoModal] = useState(false);
   const [estadoModal2, cambiarEstadoModal2] = useState(false);
-  const [clickMenu, setClickMenu] = useState(false);
 
-  const handleClick = ()=>{
-    setClickMenu(!clickMenu);
+  const [toggleMenu, setToggleMenu] = useState(true)
+    const [screenWidth, setScreenWidth] = useState(window.innerWidth)
+
+  const toggleNav = ()=>{
+    setToggleMenu(!toggleMenu);
   }
+
+  useEffect(()=>{
+    const changeWidth = ()=>{
+        setScreenWidth(window.innerWidth);
+    }
+
+    window.addEventListener('resize', changeWidth)
+
+    return ()=>{
+        window.removeEventListener('resize', changeWidth)
+    }
+}, [])
 
   const cambiaEstados = ()=>{
         cambiarEstadoModal(false);
@@ -39,39 +52,35 @@ const Header = (props) => {
   //console.log("Cantidad: ", cantidadItems)
   return (
     <>
-    <Nabvar>    
-      <div className={style.contenedor_logo}>
+    <nav>    
         <img
           className={style.imagen_logo}
           src={require('./images/logo.png')}
-          alt='Logo Empresa' />
-      </div>  
-     {console.log('el valor de clickMenu es:', clickMenu)}
-      <div className={`contenedor_menu ${clickMenu ? 'active ' : ''}` }>       
-          {/* <Textomenu menu='Ocassiones'/>
-          <Textomenu menu='All Categories'/>
-          <Textomenu menu='Gifts & Bundles'/>
-          <Textomenu menu='Our Brands'/>
-          <Textomenu menu='About Us'/> */}
-                    <a href='/'>Ocassions</a>
-                    <a href='/'>All Categories</a>
-                    <a href='/'>Gifts & Bundles</a>
-                    <a href='/'>Our Brands</a>
-                    <a href='/'>About Us</a>
-      </div>      
+          alt='Logo Empresa'
+        />
+      
+      {(toggleMenu || screenWidth > 500)&&(
+       
+          <ul className={style.list}>         
+            <li className={style.items}>Ocassions</li>
+            <li className={style.items}>All Categories</li>
+            <li className={style.items}>Gifts & Bundles</li>
+            <li className={style.items}>Our Brands</li>
+            <li className={style.items}>About Us</li>
+          </ul>
+          
+      )}   
+            
       <div className={style.contenedor_elipse}>        
-        <Elipse name='lupa' isHeader={ true } path='Header'/>
-        <Elipse name='usuario' isHeader={ true } path='Header' />
+        <Elipse name={<AiOutlineUser/>} isHeader={ true } path='Header'></Elipse>
+        <Elipse name={<AiOutlineSearch/>} isHeader={ true } path='Header'></Elipse>
         <div onClick={()=>cambiarEstadoModal(!estadoModal)}>
-            <Elipse name='carrito' isHeader={ true } path='Header'/>
+            <Elipse name={<AiOutlineShoppingCart/>} isHeader={ true } path='Header'/>
         </div>        
         <div  className={ style.total }>{cantidadItems}</div>
-      </div>
-      <div className='burguer'>
-          <BurguerButton clickMenu={clickMenu}  handleClick={handleClick}/>
-      </div>       
-    
-    </Nabvar>
+      </div>      
+      <div onClick= {toggleNav} className={style.boton}><FiMenu/></div>            
+    </nav>
     
     <Modal estado={estadoModal} cambiarEstado={cambiarEstadoModal} nombre='Carrito'>
       
@@ -139,76 +148,3 @@ const Header = (props) => {
 }
 
 export default Header;
-
-const Nabvar = styled.nav`
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 180px;
-    a{
-      text-decoration: none;
-      margin-right: 3rem;      
-    }
-    @media(min-width: 820px) {
-      margin-bottom: 0px;
-    }
- 
-   .contenedor_menu a:hover{
-      color:blue;
-      text-decoration: underline;
-    }
-    
-    .contenedor_menu{
-                position:absolute;
-                top: -700px;
-                left: -2000px;
-                margin-left: auto;
-                margin-right: auto; 
-                text-align: center;
-                a{
-                  display: block;
-                } 
-                @media(min-width: 820px){
-                    
-                     position:initial;
-                      margin:0;
-                     a{
-                      color:#333;
-                      display: inline;
-                     }    
-                } 
-           
-          }
-
-   .contenedor_menu.active{
-                    width: 100%;
-                    display: block;
-                    position: absolute;
-                    margin-left: auto;
-                    margin-right: auto;
-                    top:21%;
-                    left: 0;
-                    right: 0;
-                    text-align: center;
-                    
-                    a{
-                        
-                    }              
-          
-
-                    
-   }  
-   
-
-   .burguer{
-                padding-left: 20px;
-
-                @media(min-width:820px){
-                    display: none;
-                }
-            }
-
- 
-
-`;

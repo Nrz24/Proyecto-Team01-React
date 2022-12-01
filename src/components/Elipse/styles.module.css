@@ -8,6 +8,8 @@
     margin-right: 25px;
     text-align: center;
     justify-content: center;
+    flex-direction: column;
+    
 }
 
 .imagen {
@@ -33,6 +35,7 @@
     text-align: center;
     justify-content: center;
     background-color: #FF8126;
+    flex-direction: column;
 }
 
 .contenedor_elipse_friends:hover {
@@ -41,13 +44,37 @@
 
 
 @media only screen and (max-width: 412px) {
+    .contenedor_elipse{
+        width: 40px;
+        height: 40px;
+    }
     .contenedor_elipse_friends {
         width: 40px;
         height: 40px;
+        align-items: center;
     }
 
     .imagen {
         margin-top: 8px;
+        width: 50%;
+        height: 50%;
+    }
+
+}
+
+@media only screen and (max-width: 375px) {
+    .contenedor_elipse{
+        width: 40px;
+        height: 40px;
+    }
+    .contenedor_elipse_friends {
+        width: 40px;
+        height: 40px;
+        align-items: center;
+    }
+
+    .imagen {
+       /*  margin-top: 8px; */
         width: 50%;
         height: 50%;
     }
