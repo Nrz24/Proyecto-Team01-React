@@ -6,7 +6,7 @@ export const Textomenu = (props) => {
     <>
         <ul>
             <li>
-                <a href='a'>{ props.menu}</a>
+                <a href='/'>{ props.menu}</a>
             </li>
         </ul>
     </>

@@ -1,48 +1,52 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
 
-.contenedor_instagram{
-    width: 1170px;
+.contenedor_instagram {
     height: 276px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    
+    padding: 30px 0px;
+
 
 }
-.title{
-    width: 100%;   
-    text-align: center;
-    
+
+.title {
+    width: 100%;
+    padding-bottom: 50px;
+    margin-top: 50px;
+    padding-left: 30px;
+
 }
 
-.title h2{
+.title h2 {
     font-family: Roboto;
     font-size: 40px;
     font-weight: 700;
-    line-height: 48.44px;     
+    line-height: 48.44px;
     font-style: normal;
 
 }
 
-span{
-    color:#FF8126;
+.tituloNaranja {
+    color: #FF8126;
     text-decoration: underline;
 }
 
-.carusel{
+.carusel {
     margin-top: 50px;
 }
 
-@media only screen and (max-width: 820px ){
-    .title h2{
-        font-size: 30px;
+@media only screen and (max-width: 820px) {
+    .title h2 {
+        font-size: 38px;
     }
- 
- }
- @media only screen and (max-width: 412px ){
-    .title h2{
-        font-size: 16px;
+
+}
+
+@media only screen and (max-width: 412px) {
+    .title h2 {
+        font-size: 22px;
     }
- 
- }
+
+}

@@ -6,7 +6,7 @@
 
 .carousel-wrapper {
     display: flex;
-    width: 100vw;
+    width: 100%;
     position: relative;
     padding-left: 7%;
 }
@@ -48,6 +48,34 @@
 
 .carousel-content.show-4>* {
     width: calc(100% / 4);
+}
+
+.carousel-content.show-5>* {
+    width: calc(100% / 5);
+}
+
+.carousel-content.show-6>* {
+    width: calc(100% / 6);
+}
+
+.carousel-content.show-7>* {
+    width: calc(100% / 7);
+}
+
+.carousel-content.show-8>* {
+    width: calc(100% / 8);
+}
+
+.carousel-content.show-9>* {
+    width: calc(100% / 9);
+}
+
+.carousel-content.show-10>* {
+    width: calc(100% / 10);
+}
+
+.carousel-content.show-11>* {
+    width: calc(100% / 11);
 }
 
 .left-arrow,

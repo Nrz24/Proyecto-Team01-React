@@ -1,22 +1,12 @@
-.navbar{
+/* aplica flex a contendor de elipses */
+.contenedor_elipse {
     display: flex;
-    justify-content: space-around;
-    align-items: center;
-    
+    padding: 20px;
+    padding-bottom: 20px;
+
 }
 
-.contenedor_menu{   
-    display: flex;
-    justify-content: center;
-    
-}
-
-.contenedor_elipse{
-    display: flex;
-    
-}
-
-.total{
+.total {
     border: 1px solid #FF8126;
     border-radius: 30px;
     width: 20px;
@@ -27,53 +17,127 @@
     margin-left: -50px;
     font-size: 10px;
 }
-.contenedor_logo{
+
+.contenedor_tabla {
+    padding-left: 40px;
 
 }
 
-.imagen_logo{
+.totales {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 30px;
+}
+
+.contenidoModal {
+    color: #FF8126;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.tabla_interna {
+    width: 95%;
+
+}
+
+thead {
+    background: #81bbea;
+}
+
+th {
+    color: #ffff;
+}
+
+th,
+td {
+    padding: 10px;
+}
+
+
+
+.shopButtons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-top: 15px;
+}
+
+.cardImage {
+    max-height: 100%;
+    object-fit: contain;
+    width: 50px;
+    padding-right: 4px;
 
 }
 
 
 
-@media only screen and (max-width: 820px ){
-    img{
-        width: 50%;
-    }
-    
-    .navbar{
-        justify-content: flex-start;
-        margin-bottom: 50px;
-    }
 
-    .contenedor_elipse{
-      margin-left: -490px;
-      margin-bottom: -80px;
-     
-      
+@media only screen and (max-width: 600px) {
+    img {
+        width: 55%;
         
     }
 
-}
+    .contenidoModal {
+        font-size: 10px;
+    }
 
+  .navbar {
+        display: flex;
+        
+        justify-content: space-between;
+        margin-bottom: 200px;
+        flex-direction: row;
+    }
+   
+    
+    .contenedor_elipse {
+        margin-left: -100px;
+        margin-bottom: -80px;
+    }
 
-@media only screen and (max-width: 412px ){
-    .contenedor_logo{
+    .cardImage {
         display: none;
     }
 
-    .navbar .contenedor_menu{
-        flex-direction: column;
-        
+    .contenedor_tabla {
+        padding-left: 4px;
+
     }
 
-    .contenedor_elipse{
-        margin: 0;
-        margin-top: 30px;
-        margin-left: 15px;
+    .totales {
+        padding: 5px;
     }
-   
+
+    .contenidoModal {
+        font-size: 15px;
+    }
+
+    th,
+    td {
+        padding: 3px;
+    }
 }
 
 
+@media only screen and (max-width: 412px) {
+    .contenedor_logo {
+        display: none;
+    }
+
+  
+
+    .contenedor_elipse {
+        margin: 0;
+        margin-top: 30px;
+        
+        
+    }
+
+}
+
+
+    
+ 
