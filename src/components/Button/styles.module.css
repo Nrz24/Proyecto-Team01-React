@@ -20,6 +20,7 @@
 
 .botonNaranja:hover {
     border: 3px solid lightsalmon;
+    color: #FF8126;
 }
 
 @media only screen and (max-width: 820px) {
