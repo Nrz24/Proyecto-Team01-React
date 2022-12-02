@@ -8,6 +8,36 @@
 
 .App {
     font-family: 'Poppins';
-    height: 4502px;
-    margin: auto;
+}
+
+@media (max-width: 575px) {
+    .container {
+        background-color: #ffffff;
+    }
+}
+@media (min-width: 576px) {
+    .container {
+        background-color: #ffffff;
+    }
+}
+
+/* medium */
+@media (min-width: 768px) {
+    .container {
+        background-color: #ffffff;
+    }
+}
+
+/* large */
+@media (min-width: 992px) {
+    .container {
+        background-color: #ffffff;
+    }
+}
+
+/* Extra Large */
+@media (min-width: 1200px) {
+    .container {
+        background-color: #ffffff;
+    }
 }

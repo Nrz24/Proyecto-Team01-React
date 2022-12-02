@@ -70,6 +70,7 @@ function App() {
 
   return (
     <>
+    <div className="container">
       <div className="App">
         <div className="warning">
           <Warning title="Free Delivery over $100. Gift with Purchase over $150" />
@@ -88,6 +89,7 @@ function App() {
           <Tellafriend />
           <Footer />
         </div>
+      </div>
       </div>
     </>
   );
