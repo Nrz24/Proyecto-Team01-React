@@ -1,11 +1,11 @@
 .contenedor_elipse {
     display: flex;
     border: 1px solid #BFBFBF;
-    border-radius: 30px;
-    width: 60px;
-    height: 60px;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
     float: left;
-    margin-right: 25px;
+    margin-right: 15px;
     text-align: center;
     justify-content: center;
     flex-direction: column;
@@ -42,7 +42,9 @@
     border: 1px solid #3b20e9;
 }
 
-
+.icono{
+    font-size: 30px;
+}
 @media only screen and (max-width: 412px) {
     .contenedor_elipse{
         width: 40px;

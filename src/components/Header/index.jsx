@@ -52,7 +52,8 @@ const Header = (props) => {
   //console.log("Cantidad: ", cantidadItems)
   return (
     <>
-    <nav>    
+    <nav>
+        
         <img
           className={style.imagen_logo}
           src={require('./images/logo.png')}
@@ -60,7 +61,7 @@ const Header = (props) => {
         />
       
       {(toggleMenu || screenWidth > 500)&&(
-       
+      /*  <div className={style.contenedor}> */
           <ul className={style.list}>         
             <li className={style.items}>Ocassions</li>
             <li className={style.items}>All Categories</li>
@@ -68,18 +69,22 @@ const Header = (props) => {
             <li className={style.items}>Our Brands</li>
             <li className={style.items}>About Us</li>
           </ul>
-          
+       /*  </div>  */
       )}   
             
-      <div className={style.contenedor_elipse}>        
-        <Elipse name={<AiOutlineUser/>} isHeader={ true } path='Header'></Elipse>
-        <Elipse name={<AiOutlineSearch/>} isHeader={ true } path='Header'></Elipse>
+      <div className={style.contenedor_elipse}>
+         <div className={style.elipse}>  
+          <Elipse clasname={style.elipse} name={<AiOutlineUser/>} isHeader={ true } path='Header'></Elipse>
+        </div>
+        <div className={style.elipse}>
+          <Elipse name={<AiOutlineSearch/>} isHeader={ true } path='Header'></Elipse>
+        </div>
         <div onClick={()=>cambiarEstadoModal(!estadoModal)}>
             <Elipse name={<AiOutlineShoppingCart/>} isHeader={ true } path='Header'/>
         </div>        
         <div  className={ style.total }>{cantidadItems}</div>
       </div>      
-      <div onClick= {toggleNav} className={style.boton}><FiMenu/></div>            
+      <div onClick= {toggleNav} className={style.boton}><FiMenu/></div>          
     </nav>
     
     <Modal estado={estadoModal} cambiarEstado={cambiarEstadoModal} nombre='Carrito'>
