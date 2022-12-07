@@ -12,7 +12,7 @@ const Instagram = () => {
         </h2>
       </div>
 
-      <Carousel infiniteLoop={true} cardWidth="270">
+      <Carousel infiniteLoop={true} cardWidth="200">
         <Squareinstagram name="slider1" path="Instagram" />
         <Squareinstagram name="slider2" path="Instagram" />
         <Squareinstagram name="slider3" path="Instagram" />
