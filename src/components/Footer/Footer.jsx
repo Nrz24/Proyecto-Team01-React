@@ -9,10 +9,10 @@ import styles from "./styles.module.css"
 function Menu (props){
     let titulo =props.lista
     let lista = Menues[titulo]
-    let { height, width } = useWindowDimensions();
+    /* let { height, width } = useWindowDimensions(); */
     let isWideWindow = useWindowDimensions().width > 520;
-    let roleCursor = isWideWindow ? "default": "pointer" ;
-     //   console.log("Titulo: " , titulo)
+    let roleCursor = isWideWindow ? "default": "pointer" 
+    
     let anchorStyle = {color: "grey", textAlign: "left", padding:7}
     
 

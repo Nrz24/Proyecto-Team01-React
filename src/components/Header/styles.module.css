@@ -1,5 +1,5 @@
 /* para navbar */
-img{
+nav img{
     width: 10%;
     max-width: 100px;
 }
@@ -139,7 +139,7 @@ td {
 
 @media only screen and (max-width: 500px) {   
 
-    img{
+    nav img{
         display: none;
     }
     
